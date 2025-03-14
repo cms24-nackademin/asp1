@@ -1,0 +1,10 @@
+C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\wwwroot\favicon.ico
+C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\wwwroot\js\site.js
+C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\wwwroot\images\avatars\avatar-template.svg
+C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\wwwroot\css\site.css
+C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\wwwroot\images\alpha-logotype-icon.svg
+wwwroot\css\site.css
+wwwroot\favicon.ico
+wwwroot\images\alpha-logotype-icon.svg
+wwwroot\images\avatars\avatar-template.svg
+wwwroot\js\site.js
