@@ -303,7 +303,7 @@ h6, .h6 {
         border-radius: 16px;
         padding: 2rem;
         box-shadow: 0 3px 4px 1px rgba(0,0,0,0.1);
-        min-width: 550px;
+        width: 90%;
     }
 
         .modal > .modal-content header,
@@ -360,6 +360,31 @@ form {
         position: relative;
     }
 
+.input-validation-error,
+.input-validation-error:focus {
+    border-color: var(--error-border-color);
+}
+
+.field-validation-error {
+    background-color: var(--error-background-color);
+    color: var(--error-text-color);
+    font-size: 0.8em;
+    padding: 0.48em 1rem;
+    border-radius: 14px;
+    position: absolute;
+    top: 3px;
+    right: 0.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+    .field-validation-error::before {
+        content: '\f071';
+        font-family: var(--font-fa-pro);
+        font-size: 1.2em;
+    }
+
 
 
 /* sections & components */
@@ -394,3 +419,8 @@ section > .content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+
+/* custom modals */
+#addClientModal .modal-content {
+    width: 450px;
+}

@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v9.0": {
       "WebApp/1.0.0": {
+        "dependencies": {
+          "Business": "1.0.0"
+        },
         "runtime": {
           "WebApp.dll": {}
+        }
+      },
+      "Business/1.0.0": {
+        "runtime": {
+          "Business.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "WebApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Business/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

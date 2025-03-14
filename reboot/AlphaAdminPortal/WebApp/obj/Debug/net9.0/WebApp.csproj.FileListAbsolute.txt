@@ -34,5 +34,9 @@ C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\WebApp.p
 C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\WebApp.genruntimeconfig.cache
 C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\ref\WebApp.dll
 C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\WebApp.sourcelink.json
-C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\compressed\5wk3qh7byk-5q0mig1j7v.gz
-C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\compressed\fspdjdrw69-l4sqbr4b76.gz
+C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\compressed\fspdjdrw69-8l6onsguep.gz
+C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\bin\Debug\net9.0\Business.dll
+C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\bin\Debug\net9.0\Business.pdb
+C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\WebApp.csproj.AssemblyReference.cache
+C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\WebApp.csproj.Up2Date
+C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\compressed\5wk3qh7byk-ctr2diega0.gz
