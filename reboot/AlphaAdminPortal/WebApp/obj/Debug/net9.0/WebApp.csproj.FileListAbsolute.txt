@@ -15,11 +15,9 @@ C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\WebApp.M
 C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\WebApp.RazorAssemblyInfo.cache
 C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\WebApp.RazorAssemblyInfo.cs
 C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\scopedcss\bundle\WebApp.styles.css
-C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\compressed\fspdjdrw69-u4a9lloxfd.gz
 C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\compressed\15ykilufbm-61n19gt1b8.gz
 C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\compressed\n5fu54hth2-abj3u8yy14.gz
 C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\compressed\b4b5dbzdds-517ty3v5f9.gz
-C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\compressed\5wk3qh7byk-3r8b2a0bt1.gz
 C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\staticwebassets.build.json
 C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\staticwebassets.development.json
 C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -35,3 +33,6 @@ C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\refint\W
 C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\WebApp.pdb
 C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\WebApp.genruntimeconfig.cache
 C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\ref\WebApp.dll
+C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\WebApp.sourcelink.json
+C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\compressed\5wk3qh7byk-5q0mig1j7v.gz
+C:\Projects\cms24\asp-1\reboot\AlphaAdminPortal\WebApp\obj\Debug\net9.0\compressed\fspdjdrw69-l4sqbr4b76.gz

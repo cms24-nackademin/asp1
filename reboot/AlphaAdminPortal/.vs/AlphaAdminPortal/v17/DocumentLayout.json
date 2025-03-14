@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\reboot\\alphaadminportal\\webapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|solutionrelative:webapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\reboot\\alphaadminportal\\webapp\\views\\shared\\partials\\modals\\_addclientmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\shared\\partials\\modals\\_addclientmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\reboot\\alphaadminportal\\webapp\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|solutionrelative:webapp\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\reboot\\alphaadminportal\\webapp\\views\\admin\\clients.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\admin\\clients.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "WebApp\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "WebApp\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAC0BAAAAAAAAAAAAADkBAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-14T09:52:26.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Clients.cshtml",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\Views\\Admin\\Clients.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Admin\\Clients.cshtml",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\Views\\Admin\\Clients.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Admin\\Clients.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T09:51:32.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "WebApp\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "WebApp\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwA8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-14T09:47:46.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_AddClientModal.cshtml",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\Views\\Shared\\Partials\\Modals\\_AddClientModal.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Shared\\Partials\\Modals\\_AddClientModal.cshtml",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\Views\\Shared\\Partials\\Modals\\_AddClientModal.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Shared\\Partials\\Modals\\_AddClientModal.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T08:52:22.62Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

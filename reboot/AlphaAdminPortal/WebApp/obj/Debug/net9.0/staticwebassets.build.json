@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tyfiD0SJo4BTruqYMSu7tbznUpRjSL5t1yTFPGGe73U=",
+  "Hash": "FbnI9+StiHHvGcYkuiS22sSYNoGpB47lz84cG0DJS+4=",
   "Source": "WebApp",
   "BasePath": "_content/WebApp",
   "Mode": "Default",
@@ -38,12 +38,12 @@
       "OriginalItemSpec": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\obj\\Debug\\net9.0\\compressed\\5wk3qh7byk-3r8b2a0bt1.gz",
+      "Identity": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\obj\\Debug\\net9.0\\compressed\\5wk3qh7byk-5q0mig1j7v.gz",
       "SourceId": "WebApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/WebApp",
-      "RelativePath": "js/site#[.{fingerprint=3r8b2a0bt1}]?.js.gz",
+      "RelativePath": "js/site#[.{fingerprint=5q0mig1j7v}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -52,8 +52,8 @@
       "RelatedAsset": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\wwwroot\\js\\site.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "7t0uxwsjr0",
-      "Integrity": "Zd+4tKe+YyWXvSCQtbmshsT5I0pKoALzyCu8fniaMWo=",
+      "Fingerprint": "ai3ddhbbv3",
+      "Integrity": "AtSIr2lN02pU/xw3MU5U3OvhYzis3xm6bQrd5a7uLbM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\wwwroot\\js\\site.js"
@@ -80,12 +80,12 @@
       "OriginalItemSpec": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\wwwroot\\images\\avatars\\avatar-template.svg"
     },
     {
-      "Identity": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-u4a9lloxfd.gz",
+      "Identity": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-l4sqbr4b76.gz",
       "SourceId": "WebApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/WebApp",
-      "RelativePath": "css/site#[.{fingerprint=u4a9lloxfd}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=l4sqbr4b76}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -94,8 +94,8 @@
       "RelatedAsset": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "bvj07mqa59",
-      "Integrity": "lwPNiVSuZtl1klN9bsXdYbyyDSrg8Q2I4vzIyTwykn0=",
+      "Fingerprint": "f88pyubfyj",
+      "Integrity": "EQC+o+k6Gv+R4+9oaiMY8HJNBi1x307vcHtD58EZRks=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\wwwroot\\css\\site.css"
@@ -136,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "u4a9lloxfd",
-      "Integrity": "jgTzhKSLwD8cBgPghr7xe/EQcr0WQvv2zp75CojDvOw=",
+      "Fingerprint": "l4sqbr4b76",
+      "Integrity": "5UeEkh3wsAsr7MLvRAZ/s27QGnbGKSM73dxKj5SFkHw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -220,8 +220,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3r8b2a0bt1",
-      "Integrity": "8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=",
+      "Fingerprint": "5q0mig1j7v",
+      "Integrity": "0/AHXHZA7efaB0/AQQV5G+t5+E3ISQ5eennb2uolUDQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -230,12 +230,12 @@
   "Endpoints": [
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-u4a9lloxfd.gz",
+      "AssetFile": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-l4sqbr4b76.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000583771162"
+          "Quality": "0.000435161010"
         }
       ],
       "ResponseHeaders": [
@@ -245,15 +245,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1712"
+          "Value": "2297"
         },
         {
           "Name": "ETag",
-          "Value": "\"lwPNiVSuZtl1klN9bsXdYbyyDSrg8Q2I4vzIyTwykn0=\""
+          "Value": "\"EQC+o+k6Gv+R4+9oaiMY8HJNBi1x307vcHtD58EZRks=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 07:58:42 GMT"
+          "Value": "Fri, 14 Mar 2025 10:51:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -273,13 +273,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"jgTzhKSLwD8cBgPghr7xe/EQcr0WQvv2zp75CojDvOw=\""
+          "Value": "W/\"5UeEkh3wsAsr7MLvRAZ/s27QGnbGKSM73dxKj5SFkHw=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-jgTzhKSLwD8cBgPghr7xe/EQcr0WQvv2zp75CojDvOw="
+          "Value": "sha256-5UeEkh3wsAsr7MLvRAZ/s27QGnbGKSM73dxKj5SFkHw="
         }
       ]
     },
@@ -294,7 +294,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7013"
+          "Value": "9851"
         },
         {
           "Name": "Content-Type",
@@ -302,11 +302,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"jgTzhKSLwD8cBgPghr7xe/EQcr0WQvv2zp75CojDvOw=\""
+          "Value": "\"5UeEkh3wsAsr7MLvRAZ/s27QGnbGKSM73dxKj5SFkHw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 07:58:42 GMT"
+          "Value": "Fri, 14 Mar 2025 10:51:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -316,13 +316,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-jgTzhKSLwD8cBgPghr7xe/EQcr0WQvv2zp75CojDvOw="
+          "Value": "sha256-5UeEkh3wsAsr7MLvRAZ/s27QGnbGKSM73dxKj5SFkHw="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-u4a9lloxfd.gz",
+      "AssetFile": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-l4sqbr4b76.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -331,7 +331,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1712"
+          "Value": "2297"
         },
         {
           "Name": "Content-Type",
@@ -339,11 +339,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lwPNiVSuZtl1klN9bsXdYbyyDSrg8Q2I4vzIyTwykn0=\""
+          "Value": "\"EQC+o+k6Gv+R4+9oaiMY8HJNBi1x307vcHtD58EZRks=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 07:58:42 GMT"
+          "Value": "Fri, 14 Mar 2025 10:51:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -361,18 +361,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-lwPNiVSuZtl1klN9bsXdYbyyDSrg8Q2I4vzIyTwykn0="
+          "Value": "sha256-EQC+o+k6Gv+R4+9oaiMY8HJNBi1x307vcHtD58EZRks="
         }
       ]
     },
     {
-      "Route": "css/site.u4a9lloxfd.css",
-      "AssetFile": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-u4a9lloxfd.gz",
+      "Route": "css/site.l4sqbr4b76.css",
+      "AssetFile": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-l4sqbr4b76.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000583771162"
+          "Quality": "0.000435161010"
         }
       ],
       "ResponseHeaders": [
@@ -382,15 +382,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1712"
+          "Value": "2297"
         },
         {
           "Name": "ETag",
-          "Value": "\"lwPNiVSuZtl1klN9bsXdYbyyDSrg8Q2I4vzIyTwykn0=\""
+          "Value": "\"EQC+o+k6Gv+R4+9oaiMY8HJNBi1x307vcHtD58EZRks=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 07:58:42 GMT"
+          "Value": "Fri, 14 Mar 2025 10:51:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -410,13 +410,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"jgTzhKSLwD8cBgPghr7xe/EQcr0WQvv2zp75CojDvOw=\""
+          "Value": "W/\"5UeEkh3wsAsr7MLvRAZ/s27QGnbGKSM73dxKj5SFkHw=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "u4a9lloxfd"
+          "Value": "l4sqbr4b76"
         },
         {
           "Name": "label",
@@ -424,12 +424,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-jgTzhKSLwD8cBgPghr7xe/EQcr0WQvv2zp75CojDvOw="
+          "Value": "sha256-5UeEkh3wsAsr7MLvRAZ/s27QGnbGKSM73dxKj5SFkHw="
         }
       ]
     },
     {
-      "Route": "css/site.u4a9lloxfd.css",
+      "Route": "css/site.l4sqbr4b76.css",
       "AssetFile": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -439,7 +439,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7013"
+          "Value": "9851"
         },
         {
           "Name": "Content-Type",
@@ -447,11 +447,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"jgTzhKSLwD8cBgPghr7xe/EQcr0WQvv2zp75CojDvOw=\""
+          "Value": "\"5UeEkh3wsAsr7MLvRAZ/s27QGnbGKSM73dxKj5SFkHw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 07:58:42 GMT"
+          "Value": "Fri, 14 Mar 2025 10:51:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -461,7 +461,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "u4a9lloxfd"
+          "Value": "l4sqbr4b76"
         },
         {
           "Name": "label",
@@ -469,13 +469,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-jgTzhKSLwD8cBgPghr7xe/EQcr0WQvv2zp75CojDvOw="
+          "Value": "sha256-5UeEkh3wsAsr7MLvRAZ/s27QGnbGKSM73dxKj5SFkHw="
         }
       ]
     },
     {
-      "Route": "css/site.u4a9lloxfd.css.gz",
-      "AssetFile": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-u4a9lloxfd.gz",
+      "Route": "css/site.l4sqbr4b76.css.gz",
+      "AssetFile": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-l4sqbr4b76.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -484,7 +484,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1712"
+          "Value": "2297"
         },
         {
           "Name": "Content-Type",
@@ -492,11 +492,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lwPNiVSuZtl1klN9bsXdYbyyDSrg8Q2I4vzIyTwykn0=\""
+          "Value": "\"EQC+o+k6Gv+R4+9oaiMY8HJNBi1x307vcHtD58EZRks=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 07:58:42 GMT"
+          "Value": "Fri, 14 Mar 2025 10:51:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -514,7 +514,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "u4a9lloxfd"
+          "Value": "l4sqbr4b76"
         },
         {
           "Name": "label",
@@ -522,7 +522,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-lwPNiVSuZtl1klN9bsXdYbyyDSrg8Q2I4vzIyTwykn0="
+          "Value": "sha256-EQC+o+k6Gv+R4+9oaiMY8HJNBi1x307vcHtD58EZRks="
         }
       ]
     },
@@ -1421,13 +1421,13 @@
       ]
     },
     {
-      "Route": "js/site.3r8b2a0bt1.js",
-      "AssetFile": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\obj\\Debug\\net9.0\\compressed\\5wk3qh7byk-3r8b2a0bt1.gz",
+      "Route": "js/site.5q0mig1j7v.js",
+      "AssetFile": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\obj\\Debug\\net9.0\\compressed\\5wk3qh7byk-5q0mig1j7v.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.041666666667"
+          "Quality": "0.002583979328"
         }
       ],
       "ResponseHeaders": [
@@ -1437,15 +1437,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23"
+          "Value": "386"
         },
         {
           "Name": "ETag",
-          "Value": "\"Zd+4tKe+YyWXvSCQtbmshsT5I0pKoALzyCu8fniaMWo=\""
+          "Value": "\"AtSIr2lN02pU/xw3MU5U3OvhYzis3xm6bQrd5a7uLbM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 07:41:15 GMT"
+          "Value": "Fri, 14 Mar 2025 10:32:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1465,13 +1465,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=\""
+          "Value": "W/\"0/AHXHZA7efaB0/AQQV5G+t5+E3ISQ5eennb2uolUDQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3r8b2a0bt1"
+          "Value": "5q0mig1j7v"
         },
         {
           "Name": "label",
@@ -1479,12 +1479,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U="
+          "Value": "sha256-0/AHXHZA7efaB0/AQQV5G+t5+E3ISQ5eennb2uolUDQ="
         }
       ]
     },
     {
-      "Route": "js/site.3r8b2a0bt1.js",
+      "Route": "js/site.5q0mig1j7v.js",
       "AssetFile": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1494,7 +1494,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3"
+          "Value": "1265"
         },
         {
           "Name": "Content-Type",
@@ -1502,11 +1502,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=\""
+          "Value": "\"0/AHXHZA7efaB0/AQQV5G+t5+E3ISQ5eennb2uolUDQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 07:41:15 GMT"
+          "Value": "Fri, 14 Mar 2025 10:32:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1516,7 +1516,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3r8b2a0bt1"
+          "Value": "5q0mig1j7v"
         },
         {
           "Name": "label",
@@ -1524,13 +1524,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U="
+          "Value": "sha256-0/AHXHZA7efaB0/AQQV5G+t5+E3ISQ5eennb2uolUDQ="
         }
       ]
     },
     {
-      "Route": "js/site.3r8b2a0bt1.js.gz",
-      "AssetFile": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\obj\\Debug\\net9.0\\compressed\\5wk3qh7byk-3r8b2a0bt1.gz",
+      "Route": "js/site.5q0mig1j7v.js.gz",
+      "AssetFile": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\obj\\Debug\\net9.0\\compressed\\5wk3qh7byk-5q0mig1j7v.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1539,7 +1539,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23"
+          "Value": "386"
         },
         {
           "Name": "Content-Type",
@@ -1547,11 +1547,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Zd+4tKe+YyWXvSCQtbmshsT5I0pKoALzyCu8fniaMWo=\""
+          "Value": "\"AtSIr2lN02pU/xw3MU5U3OvhYzis3xm6bQrd5a7uLbM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 07:41:15 GMT"
+          "Value": "Fri, 14 Mar 2025 10:32:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1569,7 +1569,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3r8b2a0bt1"
+          "Value": "5q0mig1j7v"
         },
         {
           "Name": "label",
@@ -1577,18 +1577,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Zd+4tKe+YyWXvSCQtbmshsT5I0pKoALzyCu8fniaMWo="
+          "Value": "sha256-AtSIr2lN02pU/xw3MU5U3OvhYzis3xm6bQrd5a7uLbM="
         }
       ]
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\obj\\Debug\\net9.0\\compressed\\5wk3qh7byk-3r8b2a0bt1.gz",
+      "AssetFile": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\obj\\Debug\\net9.0\\compressed\\5wk3qh7byk-5q0mig1j7v.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.041666666667"
+          "Quality": "0.002583979328"
         }
       ],
       "ResponseHeaders": [
@@ -1598,15 +1598,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23"
+          "Value": "386"
         },
         {
           "Name": "ETag",
-          "Value": "\"Zd+4tKe+YyWXvSCQtbmshsT5I0pKoALzyCu8fniaMWo=\""
+          "Value": "\"AtSIr2lN02pU/xw3MU5U3OvhYzis3xm6bQrd5a7uLbM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 07:41:15 GMT"
+          "Value": "Fri, 14 Mar 2025 10:32:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1626,13 +1626,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=\""
+          "Value": "W/\"0/AHXHZA7efaB0/AQQV5G+t5+E3ISQ5eennb2uolUDQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U="
+          "Value": "sha256-0/AHXHZA7efaB0/AQQV5G+t5+E3ISQ5eennb2uolUDQ="
         }
       ]
     },
@@ -1647,7 +1647,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3"
+          "Value": "1265"
         },
         {
           "Name": "Content-Type",
@@ -1655,11 +1655,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=\""
+          "Value": "\"0/AHXHZA7efaB0/AQQV5G+t5+E3ISQ5eennb2uolUDQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 07:41:15 GMT"
+          "Value": "Fri, 14 Mar 2025 10:32:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1669,13 +1669,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U="
+          "Value": "sha256-0/AHXHZA7efaB0/AQQV5G+t5+E3ISQ5eennb2uolUDQ="
         }
       ]
     },
     {
       "Route": "js/site.js.gz",
-      "AssetFile": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\obj\\Debug\\net9.0\\compressed\\5wk3qh7byk-3r8b2a0bt1.gz",
+      "AssetFile": "C:\\Projects\\cms24\\asp-1\\reboot\\AlphaAdminPortal\\WebApp\\obj\\Debug\\net9.0\\compressed\\5wk3qh7byk-5q0mig1j7v.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1684,7 +1684,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23"
+          "Value": "386"
         },
         {
           "Name": "Content-Type",
@@ -1692,11 +1692,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Zd+4tKe+YyWXvSCQtbmshsT5I0pKoALzyCu8fniaMWo=\""
+          "Value": "\"AtSIr2lN02pU/xw3MU5U3OvhYzis3xm6bQrd5a7uLbM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 07:41:15 GMT"
+          "Value": "Fri, 14 Mar 2025 10:32:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1714,7 +1714,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Zd+4tKe+YyWXvSCQtbmshsT5I0pKoALzyCu8fniaMWo="
+          "Value": "sha256-AtSIr2lN02pU/xw3MU5U3OvhYzis3xm6bQrd5a7uLbM="
         }
       ]
     }
