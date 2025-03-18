@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Clients";
+}
+
+<section id="clients">
+    <header class="page-headline">
+        <h1 class="h2">@ViewData["Title"]</h1>
+        <button data-modal="true" data-target="#addClientModal" class="btn btn-blue btn-add" type="button">Add Client</button>
+    </header>
+
+    <main class="content">
+        <div class="surface">
+
+        </div>
+    </main>
+
+</section>
+
+<partial name="Partials/Modals/_AddClientModal" />

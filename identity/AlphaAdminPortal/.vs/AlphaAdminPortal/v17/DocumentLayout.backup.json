@@ -1,0 +1,186 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projects\\cms24\\asp-1\\identity\\AlphaAdminPortal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\identity\\alphaadminportal\\webapp\\views\\auth\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\auth\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\identity\\alphaadminportal\\webapp\\views\\shared\\_validationscripts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\shared\\_validationscripts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\identity\\alphaadminportal\\webapp\\wwwroot\\js\\validate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|solutionrelative:webapp\\wwwroot\\js\\validate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\identity\\alphaadminportal\\webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\identity\\alphaadminportal\\webapp\\views\\auth\\signin.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\auth\\signin.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\identity\\alphaadminportal\\webapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|solutionrelative:webapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__PROJECTS_CMS24_ASP_1_IDENTITY_ALPHAADMINPORTAL_DATA_LOCAL_DATABASE.MDF/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\identity\\alphaadminportal\\webapp\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|solutionrelative:webapp\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\identity\\alphaadminportal\\webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F12DA38E-4889-4459-877C-88E596D15302}|WebApp\\WebApp.csproj|solutionrelative:webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{085F4A96-7042-4673-8774-9C6B60D5528F}|Business\\Business.csproj|c:\\projects\\cms24\\asp-1\\identity\\alphaadminportal\\business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{085F4A96-7042-4673-8774-9C6B60D5528F}|Business\\Business.csproj|solutionrelative:business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SignIn.cshtml",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\identity\\AlphaAdminPortal\\WebApp\\Views\\Auth\\SignIn.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Auth\\SignIn.cshtml",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\identity\\AlphaAdminPortal\\WebApp\\Views\\Auth\\SignIn.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Auth\\SignIn.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T14:29:21.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_ValidationScripts.cshtml",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\identity\\AlphaAdminPortal\\WebApp\\Views\\Shared\\_ValidationScripts.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Shared\\_ValidationScripts.cshtml",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\identity\\AlphaAdminPortal\\WebApp\\Views\\Shared\\_ValidationScripts.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Shared\\_ValidationScripts.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T14:32:52.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "validate.js",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\identity\\AlphaAdminPortal\\WebApp\\wwwroot\\js\\validate.js",
+              "RelativeDocumentMoniker": "WebApp\\wwwroot\\js\\validate.js",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\identity\\AlphaAdminPortal\\WebApp\\wwwroot\\js\\validate.js",
+              "RelativeToolTip": "WebApp\\wwwroot\\js\\validate.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-18T14:32:24.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\identity\\AlphaAdminPortal\\WebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\identity\\AlphaAdminPortal\\WebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T14:30:05.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SignIn.cshtml.css",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\identity\\AlphaAdminPortal\\WebApp\\Views\\Auth\\SignIn.cshtml.css",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Auth\\SignIn.cshtml.css",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\identity\\AlphaAdminPortal\\WebApp\\Views\\Auth\\SignIn.cshtml.css",
+              "RelativeToolTip": "WebApp\\Views\\Auth\\SignIn.cshtml.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-18T14:29:15.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "dbo.AspNetUsers [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__PROJECTS_CMS24_ASP_1_IDENTITY_ALPHAADMINPORTAL_DATA_LOCAL_DATABASE.MDF/True/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "dbo.AspNetUsers [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-18T14:12:47.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ClientsController.cs",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\identity\\AlphaAdminPortal\\WebApp\\Controllers\\ClientsController.cs",
+              "RelativeDocumentMoniker": "WebApp\\Controllers\\ClientsController.cs",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\identity\\AlphaAdminPortal\\WebApp\\Controllers\\ClientsController.cs",
+              "RelativeToolTip": "WebApp\\Controllers\\ClientsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T14:12:33.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\identity\\AlphaAdminPortal\\WebApp\\Program.cs",
+              "RelativeDocumentMoniker": "WebApp\\Program.cs",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\identity\\AlphaAdminPortal\\WebApp\\Program.cs",
+              "RelativeToolTip": "WebApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T14:06:19.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\identity\\AlphaAdminPortal\\Business\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Business\\Services\\UserService.cs",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\identity\\AlphaAdminPortal\\Business\\Services\\UserService.cs",
+              "RelativeToolTip": "Business\\Services\\UserService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:57:25.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\identity\\AlphaAdminPortal\\WebApp\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "WebApp\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\identity\\AlphaAdminPortal\\WebApp\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "WebApp\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:34:55.391Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

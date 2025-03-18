@@ -1,0 +1,73 @@
+﻿@model SignUpForm
+
+@{
+    Layout = "_CenterScreenLayout";
+    ViewData["Title"] = "Create Account";
+}
+
+<section id="signup">
+    <div class="content">
+        <div class="section-header">
+            <h1 class="h2">@ViewData["Title"]</h1>
+        </div>
+        <div class="section-body">
+            <form asp-action="SignUp" asp-controller="Auth" method="post" novalidate>
+                <div class="error-message">
+                    @ViewBag?.ErrorMessage
+                </div>
+                <div class="form-group">
+                    <label asp-for="FirstName"></label>
+                    <div class="field-group">
+                        <input asp-for="FirstName" autofocus />
+                        <span asp-validation-for="FirstName"></span>
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label asp-for="LastName"></label>
+                    <div class="field-group">
+                        <input asp-for="LastName" />
+                        <span asp-validation-for="LastName"></span>
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email"></label>
+                    <div class="field-group">
+                        <input asp-for="Email" />
+                        <span asp-validation-for="Email"></span>
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password"></label>
+                    <div class="field-group">
+                        <input asp-for="Password" />
+                        <span asp-validation-for="Password"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ConfirmPassword"></label>
+                    <div class="field-group">
+                        <input asp-for="ConfirmPassword" />
+                        <span asp-validation-for="ConfirmPassword"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input asp-for="TermsAndConditions" type="checkbox" />
+                        <label>I accept <a asp-action="Terms" asp-controller="About">Terms and Conditions</a></label>
+                    </div>
+                    <span></span>
+                </div>
+
+                <button type="submit" class="btn btn-submit">Create Account</button>
+            </form>
+        </div>
+        <div class="section-footer">
+            <span>Don't have an account?</span>
+            <a asp-action="SignIn" asp-controller="Auth">Login</a>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --font-standard: "Nunito", sans-serif;
+    --font-logo: "Comfortaa", sans-serif;
+    --font-fa-pro: "Font Awesome 6 Pro";
+    --blue-light: #DBEDFF;
+    --blue-semilight: #9DCEFF;
+    --blue: #2D99FF;
+    --blue-dark: #2D7DCC;
+    --green-light: #D8FFDF;
+    --green-semilight: #B3FFC0;
+    --green: #119B56;
+    --green-dark: #187848;
+    --yellow-light: #FFF6C7;
+    --yellow-semilight: #FFF3B4;
+    --yellow: #6C6102;
+    --yellow-dark: #8B7400;
+    --red-light: #FFEAE4;
+    --red-semilight: #FFB8A5;
+    --red: #DE3434;
+    --red-dark: #B83030;
+    --white: #FFFFFF;
+    --white-100: #F5F7FA;
+    --white-200: #F1F3F7;
+    --white-300: #F0F1F5;
+    --gray-100: #E8EAED;
+    --gray-200: #EBEEF2;
+    --gray-300: #E3E5E8;
+    --gray-400: #E8E8E8;
+    --gray-500: #DEDEDE;
+    --gray-600: #C6C8CC;
+    --gray-700: #9E9E9E;
+    --gray-800: #637085;
+    --dark-100: #1A1926;
+    --dark-200: #1C1D1F;
+    --dark-300: #202123;
+    --dark-400: #28263B;
+    --dark-500: #333333;
+    --dark-600: #38383B;
+    --dark-opacity-20: rgba(26, 25, 38, 0.2);
+    --dark-opacity-60: rgba(26, 25, 38, 0.6);
+
+
+    --background-color: var(--white-100);
+    --content-background-color: var(--white);
+    
+    --text-color: var(--dark-400);
+    --text-muted-color: var(--gray-800);
+    --text-extra-muted-color: var(--gray-700);
+    --text-headline-color: var(--dark-100);
+
+    --border-color: var(--gray-500);
+    --border-focus-color: var(--blue-semilight);
+    
+    --btn-text-color: var(--white);
+    --btn-border-color: var(--white);
+    --btn-background-color: var(--blue);
+    --btn-hover-text-color: var(--white);
+    --btn-hover-border-color: var(--white);
+    --btn-hover-background-color: var(--blue-dark);
+    
+    --link-color: var(--blue);
+    --link-hover-color: var(--blue);
+    
+    --navlink-text-color: var(--dark-200);
+    --navlink-text-hover-color: var(--blue);
+    --navlink-text-active-color: var(--blue);
+    --navlink-background-color: transparent;
+    --navlink-background-hover-color: var(--blue-light);
+    --navlink-background-active-color: var(--blue-light);
+    
+    --table-header-background-color: var(--white);
+    --table-header-text-color: var(--gray-800);
+    --table-tbody-tr-background-hover-color: var(--blue-accent-10);
+    
+    --modal-screen-background-color: var(--dark-100-a);
+    --modal-background-color: var(--white);
+    
+    --form-text-color: var(--white);
+    --form-border-color: var(--white);
+    --form-background-color: var(--white);
+    --form-label-color: var(--dark-200);
+    --form-input-text-color: var(--dark-200);
+    --form-input-placeholder-color: var(--gray-600);
+    --form-input-background-color: var(--white);
+    --form-input-border-color: var(--gray-600);
+    --form-input-border-focus-color: var(--blue-semilight);
+    --form-error-input-text-color: var(--dark-200);
+    --form-error-input-background-color: var(--white);
+    --form-error-input-border-color: var(--red-semilight);
+    --form-error-input-border-focus-color: var(--blue-semilight);
+    --form-error-message-text-color: var(--red-dark);
+    --form-error-message-background-color: var(--red-light);
+    --form-error-message-border-color: var(--red-light);
+}
+
+/* structure */
+
+html, body {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font-standard);
+    font-style: normal;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.center-screen {
+    display: grid;
+    align-items: center;
+    height: 100dvh;
+}
+
+.portal {
+    display: grid;
+    grid-template-columns: minmax(50px, 270px) 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "logo top" "side main";
+    height: 100dvh;
+}
+
+    .portal > .logotype {
+        grid-area: logo;
+        border-right: 1px solid var(--border-color);
+        padding: 1rem 2rem;
+    }
+    .portal > header {
+        grid-area: top;
+        border-bottom: 1px solid var(--border-color);
+        padding: 1rem 2rem;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 5rem;
+        align-items: center;
+    }
+
+    .portal > aside {
+        grid-area: side;
+        border-right: 1px solid var(--border-color);
+        padding: 1rem;
+    }
+
+    .portal > main {
+        grid-area: main;
+        padding: 2rem;
+    }
+
+.hide {
+    display: none !important;
+}
+
+.flex {
+    display: flex !important;
+}
+
+
+/* typography */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: var(--font-standard);
+    margin: 0;
+    padding: 0;
+}
+
+h1, .h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+h2, .h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h3, .h3 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+h4, .h4 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h5, .h5 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h6, .h6 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.logotype {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: var(--font-logo);
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+    .logotype:hover {
+        color: var(--text-color);
+        text-decoration: none;
+    }
+
+/* links */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+    a:hover {
+        color: var(--link-hover-color);
+        text-decoration: underline;
+    }
+
+
+.nav-links {
+    margin: 2rem 0;
+}
+
+    .nav-links > .nav-link {
+        font-size: 1em;
+        font-family: var(--font-standard);
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--navlink-text-color);
+        background-color: var(--navlink-background-color);
+        border-radius: 1rem;
+        padding: 1rem 1.5rem;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+    }
+
+        .nav-links > .nav-link:hover {
+            color: var(--navlink-text-hover-color);
+            background-color: var(--navlink-background-hover-color);
+        }
+
+        .nav-links > .nav-link.active {
+            color: var(--navlink-text-active-color);
+            background-color: var(--navlink-background-active-color);
+        }
+
+/* buttons */
+.btn-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn {
+    color: var(--btn-text-color);
+    border-color: var(--btn-border-color);
+    background-color: var(--btn-background-color);
+    transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: var(--font-standard);
+    text-decoration: none;
+    padding: 0.7rem 1.8rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    border: none;
+}
+
+    .btn:hover {
+        color: var(--btn-hover-text-color);
+        border-color: var(--btn-hover-border-color);
+        background-color: var(--btn-hover-background-color);
+    }
+
+
+.btn-submit {
+    width: 100%;
+}
+
+.btn-add::before {
+    content: '\2b';
+    font-family: var(--font-fa-pro);
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.btn-signup::before {
+    content: '\f234';
+    font-family: var(--font-fa-pro);
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.btn-signin::before {
+    content: '\f2f6';
+    font-family: var(--font-fa-pro);
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.btn-signout::before {
+    content: '\f2f5';
+    font-family: var(--font-fa-pro);
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.btn-close {
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+    padding: 0;
+    transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+    .btn-close:hover {
+        color: var(--text-muted-color);
+        border-color: transparent;
+        background-color: transparent;
+    }
+
+    .btn-close::before {
+        content: '\f00d';
+        font-family: var(--font-fa-pro);
+        font-weight: 400;
+        font-size: 1.3em;
+    }
+
+
+/* modals */
+.modal {
+    background-color: var(--modal-screen-background-color);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+    .modal > .modal-content {
+        background-color: var(--modal-background-color);
+        border-radius: 16px;
+        padding: 2rem;
+        box-shadow: 0 3px 4px 1px rgba(0,0,0,0.1);
+        width: 90%;
+    }
+
+        .modal > .modal-content header,
+        .modal > .modal-content .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .modal > .modal-content main,
+        .modal > .modal-content .modal-body {
+
+        }
+
+/* forms */
+form {
+    width: 100%;
+    position: relative;
+}
+    form input,
+    form select,
+    form textarea {
+        width: 100%;
+        font-size: 1em;
+        padding: 0.5rem 1rem;
+        border-radius: 16px;
+        border: 1px solid var(--form-input-border-color);
+        transition: border-color 0.1s ease-in-out;
+        outline: none;
+    }
+
+        form input:focus,
+        form select:focus,
+        form textarea:focus {
+            border-color: var(--form-input-border-focus-color);
+        }
+
+        form input::placeholder,
+        form select::placeholder,
+        form textarea::placeholder {
+            color: var(--form-input-placeholder-color);
+            font-size: 0.9em;
+        }
+
+    form .form-group {
+        position: relative;
+        display: grid;
+        gap: 0.2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    form .field-group {
+        position: relative;
+    }
+
+    form .checkbox-group {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+        form .checkbox-group label {
+            display: flex;
+            justify-content: center;
+            gap: 0.3rem;
+        }
+
+    form input[type="checkbox"] {
+        height: 20px;
+        width: 20px;
+    }
+
+
+
+
+.input-validation-error,
+.input-validation-error:focus {
+    border-color: var(--form-error-input-border-color);
+}
+
+.field-validation-error {
+    background-color: var(--form-error-message-background-color);
+    color: var(--form-error-message-text-color);
+    font-size: 0.8em;
+    padding: 0.48em 1rem;
+    border-radius: 14px;
+    position: absolute;
+    top: 3px;
+    right: 0.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+    .field-validation-error::before {
+        content: '\f071';
+        font-family: var(--font-fa-pro);
+        font-size: 1.2em;
+    }
+
+
+
+/* sections & components */
+section > header,
+.page-headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section > main,
+section > .content {
+    height: 100%;
+    background-color: var(--content-background-color);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 4px 3px rgba(196,196,196, 0.1);
+}
+
+#clients {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100%;
+    gap: 2rem;
+}
+
+    #clients .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+/* custom modals */
+#addClientModal .modal-content {
+    width: 450px;
+}
+
+
+#signup,
+#signin {
+    width: 80%;
+    margin: 0 auto;
+}
+    #signup .content,
+    #signin .content {
+        padding: 2rem 4rem 1rem;
+    }
+
+
+    #signup .section-header,
+    #signin .section-header {
+        text-align: center;
+    }
+
+    #signup .section-body,
+    #signin .section-body {
+        margin: 1rem 0;
+    }
+
+    #signup .section-footer,
+    #signin .section-footer {
+        text-align: center;
+        margin-top: 2rem; 
+    }
+
+@media (width >= 768px) {
+    #signup,
+    #signin {
+        width: 30%;
+    }
+}

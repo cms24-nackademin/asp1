@@ -1,0 +1,15 @@
+C:\Projects\cms24\asp-1\identity\AlphaAdminPortal\Data\bin\Debug\net9.0\Data.deps.json
+C:\Projects\cms24\asp-1\identity\AlphaAdminPortal\Data\bin\Debug\net9.0\Data.runtimeconfig.json
+C:\Projects\cms24\asp-1\identity\AlphaAdminPortal\Data\bin\Debug\net9.0\Data.dll
+C:\Projects\cms24\asp-1\identity\AlphaAdminPortal\Data\bin\Debug\net9.0\Data.pdb
+C:\Projects\cms24\asp-1\identity\AlphaAdminPortal\Data\obj\Debug\net9.0\Data.csproj.AssemblyReference.cache
+C:\Projects\cms24\asp-1\identity\AlphaAdminPortal\Data\obj\Debug\net9.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\cms24\asp-1\identity\AlphaAdminPortal\Data\obj\Debug\net9.0\Data.AssemblyInfoInputs.cache
+C:\Projects\cms24\asp-1\identity\AlphaAdminPortal\Data\obj\Debug\net9.0\Data.AssemblyInfo.cs
+C:\Projects\cms24\asp-1\identity\AlphaAdminPortal\Data\obj\Debug\net9.0\Data.csproj.CoreCompileInputs.cache
+C:\Projects\cms24\asp-1\identity\AlphaAdminPortal\Data\obj\Debug\net9.0\Data.sourcelink.json
+C:\Projects\cms24\asp-1\identity\AlphaAdminPortal\Data\obj\Debug\net9.0\Data.dll
+C:\Projects\cms24\asp-1\identity\AlphaAdminPortal\Data\obj\Debug\net9.0\refint\Data.dll
+C:\Projects\cms24\asp-1\identity\AlphaAdminPortal\Data\obj\Debug\net9.0\Data.pdb
+C:\Projects\cms24\asp-1\identity\AlphaAdminPortal\Data\obj\Debug\net9.0\Data.genruntimeconfig.cache
+C:\Projects\cms24\asp-1\identity\AlphaAdminPortal\Data\obj\Debug\net9.0\ref\Data.dll
