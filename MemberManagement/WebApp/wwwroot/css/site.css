@@ -137,6 +137,15 @@ h6, .h6 {
     font-size: 18px;
 }
 
+.flex {
+    display: flex;
+}
+
+.hide,
+.hidden {
+    display: none;
+}
+
 .wrapper-centerscreen {
     height: 100dvh;
     display: flex;

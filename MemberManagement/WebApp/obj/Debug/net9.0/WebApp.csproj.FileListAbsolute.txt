@@ -17,7 +17,6 @@ C:\Projects\cms24\asp-1\MemberManagement\WebApp\obj\Debug\net9.0\WebApp.RazorAss
 C:\Projects\cms24\asp-1\MemberManagement\WebApp\obj\Debug\net9.0\WebApp.sourcelink.json
 C:\Projects\cms24\asp-1\MemberManagement\WebApp\obj\Debug\net9.0\scopedcss\bundle\WebApp.styles.css
 C:\Projects\cms24\asp-1\MemberManagement\WebApp\obj\Debug\net9.0\compressed\15ykilufbm-61n19gt1b8.gz
-C:\Projects\cms24\asp-1\MemberManagement\WebApp\obj\Debug\net9.0\compressed\5wk3qh7byk-3r8b2a0bt1.gz
 C:\Projects\cms24\asp-1\MemberManagement\WebApp\obj\Debug\net9.0\staticwebassets.build.json
 C:\Projects\cms24\asp-1\MemberManagement\WebApp\obj\Debug\net9.0\staticwebassets.development.json
 C:\Projects\cms24\asp-1\MemberManagement\WebApp\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -178,4 +177,8 @@ C:\Projects\cms24\asp-1\MemberManagement\WebApp\bin\Debug\net9.0\Domain.pdb
 C:\Projects\cms24\asp-1\MemberManagement\WebApp\obj\Debug\net9.0\WebApp.csproj.AssemblyReference.cache
 C:\Projects\cms24\asp-1\MemberManagement\WebApp\obj\Debug\net9.0\WebApp.csproj.Up2Date
 C:\Projects\cms24\asp-1\MemberManagement\WebApp\obj\Debug\net9.0\compressed\b4b5dbzdds-517ty3v5f9.gz
-C:\Projects\cms24\asp-1\MemberManagement\WebApp\obj\Debug\net9.0\compressed\fspdjdrw69-2suq90h1sf.gz
+C:\Projects\cms24\asp-1\MemberManagement\WebApp\obj\Debug\net9.0\compressed\wzf6ou8coa-n32hy5tx5f.gz
+C:\Projects\cms24\asp-1\MemberManagement\WebApp\obj\Debug\net9.0\compressed\bdtaxi25ky-e7qsr7wkpr.gz
+C:\Projects\cms24\asp-1\MemberManagement\WebApp\obj\Debug\net9.0\compressed\5wk3qh7byk-goj8lx8gvo.gz
+C:\Projects\cms24\asp-1\MemberManagement\WebApp\obj\Debug\net9.0\compressed\nzymtqkpc3-akfpp9us3j.gz
+C:\Projects\cms24\asp-1\MemberManagement\WebApp\obj\Debug\net9.0\compressed\fspdjdrw69-awsn7ojftk.gz

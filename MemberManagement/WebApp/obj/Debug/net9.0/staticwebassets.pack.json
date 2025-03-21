@@ -17,8 +17,20 @@
       "PackagePath": "staticwebassets\\images\\avatars\\avatar-template.svg"
     },
     {
+      "Id": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\wwwroot\\js\\forms.js",
+      "PackagePath": "staticwebassets\\js\\forms.js"
+    },
+    {
+      "Id": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\wwwroot\\js\\modals.js",
+      "PackagePath": "staticwebassets\\js\\modals.js"
+    },
+    {
       "Id": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\wwwroot\\js\\validate.js",
+      "PackagePath": "staticwebassets\\js\\validate.js"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.WebApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

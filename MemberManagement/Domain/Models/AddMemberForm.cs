@@ -15,7 +15,7 @@ public class AddMemberForm
     public string LastName { get; set; } = null!;
 
     [DataType(DataType.Text)]
-    [Display(Name = "Last Name", Prompt = "Enter last name")]
+    [Display(Name = "Job Title", Prompt = "Enter job title")]
     public string? JobTitle { get; set; }
 
     [Required(ErrorMessage = "This field is required.")]

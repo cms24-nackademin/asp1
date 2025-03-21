@@ -1,10 +1,16 @@
 C:\Projects\cms24\asp-1\MemberManagement\WebApp\wwwroot\favicon.ico
 C:\Projects\cms24\asp-1\MemberManagement\WebApp\wwwroot\js\site.js
 C:\Projects\cms24\asp-1\MemberManagement\WebApp\wwwroot\images\avatars\avatar-template.svg
+C:\Projects\cms24\asp-1\MemberManagement\WebApp\wwwroot\js\modals.js
 C:\Projects\cms24\asp-1\MemberManagement\WebApp\wwwroot\css\site.css
 C:\Projects\cms24\asp-1\MemberManagement\WebApp\wwwroot\images\alpha-logotype-symbol.svg
+C:\Projects\cms24\asp-1\MemberManagement\WebApp\wwwroot\js\validate.js
+C:\Projects\cms24\asp-1\MemberManagement\WebApp\wwwroot\js\forms.js
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\alpha-logotype-symbol.svg
 wwwroot\images\avatars\avatar-template.svg
+wwwroot\js\forms.js
+wwwroot\js\modals.js
 wwwroot\js\site.js
+wwwroot\js\validate.js

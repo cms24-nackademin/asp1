@@ -1,7 +1,5 @@
 ﻿document.addEventListener('DOMContentLoaded', () => {
-
     initForms();
-
 })
 
 function initForms() {

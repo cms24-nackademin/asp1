@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using WebApp.ViewModels;
 
 namespace WebApp.Controllers;
 
@@ -22,8 +23,12 @@ public class AdminController(IMemberService memberService) : Controller
 
     public async Task<IActionResult> Members()
     {
-        var members = await _memberService.GetMembersAsync();
-        return View(members);
+        var viewModel = new MembersViewModel
+        {
+            Members = await _memberService.GetMembersAsync()
+        };
+
+        return View(viewModel);
     }
 
     public IActionResult Clients()

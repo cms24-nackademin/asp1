@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Member>
+﻿@model MembersViewModel
 
 @{
     ViewData["Title"] = "Team Members";
@@ -7,11 +7,11 @@
 <section id="team-members">
     <div class="page-header">
         <h1>@ViewData["Title"]</h1>
-        <button class="btn btn-add">Add Member</button>
+        <button type="button" data-modal="true" data-target="#addMemberModal" class="btn btn-add">Add Member</button>
     </div>
 
     <div class="members">
-        @foreach(var member in Model)
+        @foreach(var member in Model.Members)
         {
             <div class="card member">
                 <div class="image">
@@ -33,3 +33,9 @@
         }
     </div>
 </section>
+
+<partial name="Partials/Modals/_AddMemberModal" model="Model.AddMemberForm" />
+
+<script src="~/js/modals.js"></script>
+<script src="~/js/validate.js"></script>
+<script src="~/js/forms.js"></script>
