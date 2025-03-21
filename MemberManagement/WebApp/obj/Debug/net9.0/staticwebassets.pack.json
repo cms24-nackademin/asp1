@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\images\\alpha-logotype-symbol.svg"
     },
     {
+      "Id": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\wwwroot\\images\\avatars\\avatar-template.svg",
+      "PackagePath": "staticwebassets\\images\\avatars\\avatar-template.svg"
+    },
+    {
       "Id": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

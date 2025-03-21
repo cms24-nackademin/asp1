@@ -1,0 +1,62 @@
+﻿@model AddMemberForm
+
+<div id="addMemberModal" class="modal">
+    <div class="card">
+        <div class="card-header">
+            <h3>Add Member</h3>
+            <button type="button" class="btn-close" data-close="true" data-target="#addMemberModal"></button>
+        </div>
+        <div class="card-body">
+            <form asp-controller="Members" asp-action="Add" method="post" enctype="multipart/form-data" novalidate>
+                @if (!string.IsNullOrEmpty(ViewBag?.AddMemberErrorMessage))
+                {
+                    <div class="alert-notification error">
+                        @ViewBag?.AddMemberErrorMessage
+                    </div>
+                }
+                <div class="form-group">
+                    <div class="field-label-group">
+                        <label asp-for="FirstName"></label>
+                        <span asp-validation-for="FirstName"></span>
+                    </div>
+                    <input asp-for="FirstName" />
+                </div>
+                <div class="form-group">
+                    <div class="field-label-group">
+                        <label asp-for="LastName"></label>
+                        <span asp-validation-for="LastName"></span>
+                    </div>
+                    <input asp-for="LastName" />
+                </div>
+                <div class="form-group">
+                    <div class="field-label-group">
+                        <label asp-for="JobTitle"></label>
+                        <span asp-validation-for="JobTitle"></span>
+                    </div>
+                    <input asp-for="JobTitle" />
+                </div>
+                <div class="form-group">
+                    <div class="field-label-group">
+                        <label asp-for="Email"></label>
+                        <span asp-validation-for="Email"></span>
+                    </div>
+                    <input asp-for="Email" />
+                </div>
+
+                <div class="form-group">
+                    <div class="field-label-group">
+                        <label asp-for="PhoneNumber"></label>
+                        <span asp-validation-for="PhoneNumber"></span>
+                    </div>
+                    <input asp-for="PhoneNumber" />
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-submit">Add Member</button>
+                </div>
+
+            </form>
+        </div>
+        <div class="card-footer"></div>
+    </div>
+</div>

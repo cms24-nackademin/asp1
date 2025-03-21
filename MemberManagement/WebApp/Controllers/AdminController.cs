@@ -1,11 +1,15 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Business.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace WebApp.Controllers;
 
 [Authorize]
-public class AdminController : Controller
+public class AdminController(IMemberService memberService) : Controller
 {
+    private readonly IMemberService _memberService = memberService;
+
     public IActionResult Index()
     {
         return View();
@@ -16,9 +20,10 @@ public class AdminController : Controller
         return View();
     }
 
-    public IActionResult Members()
+    public async Task<IActionResult> Members()
     {
-        return View();
+        var members = await _memberService.GetMembersAsync();
+        return View(members);
     }
 
     public IActionResult Clients()

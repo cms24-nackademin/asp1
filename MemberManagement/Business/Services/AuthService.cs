@@ -9,6 +9,7 @@ public interface IAuthService
 {
     Task<bool> AlreadyExistsAsync(string email);
     Task<bool> LoginAsync(UserLoginForm loginForm);
+    Task LogoutAsync();
     Task<bool> SignUpAsync(UserSignUpForm signUpForm);
 }
 
@@ -47,5 +48,10 @@ public class AuthService(UserManager<UserEntity> userManager, SignInManager<User
         }
 
         return result.Succeeded;
+    }
+
+    public async Task LogoutAsync()
+    {
+        await _signInManager.SignOutAsync();
     }
 }

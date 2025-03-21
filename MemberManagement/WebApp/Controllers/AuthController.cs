@@ -61,4 +61,10 @@ public class AuthController(IAuthService authService) : Controller
 
         return View(userSignUpForm);
     }
+
+    public async Task<IActionResult> Logout()
+    {
+        await _authService.LogoutAsync();
+        return LocalRedirect("~/");
+    }
 }

@@ -435,3 +435,33 @@ textarea {
         width: 500px;
     }
 }
+
+#team-members {
+    display: grid;
+    gap: 2rem;
+}
+
+.members {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.member {
+    width: 300px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto 1fr;
+}
+
+.member .name {
+    margin-bottom: 0.5rem;
+}
+
+.member .jobtitle {
+    background-color: var(--white-300);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 2rem;
+}

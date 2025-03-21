@@ -1,8 +1,35 @@
-﻿@{
+﻿@model IEnumerable<Member>
+
+@{
     ViewData["Title"] = "Team Members";
 }
 
-<div class="page-header">
-    <h1>@ViewData["Title"]</h1>
-    <button class="btn btn-add">Add Member</button>
-</div>
+<section id="team-members">
+    <div class="page-header">
+        <h1>@ViewData["Title"]</h1>
+        <button class="btn btn-add">Add Member</button>
+    </div>
+
+    <div class="members">
+        @foreach(var member in Model)
+        {
+            <div class="card member">
+                <div class="image">
+                    @if (!string.IsNullOrEmpty(member.ImageUrl))
+                    {
+                        <img src="~/images/uploads/members/@member.ImageUrl" alt="" />
+                    }
+                    else
+                    {
+                        <img src="~/images/avatars/avatar-template.svg" alt="" />
+                    }
+                </div>
+                <h4 class="name">@member.FirstName @member.LastName</h4>
+                <div class="jobtitle">@member.JobTitle</div>
+                <div class="email">@member.Email</div>
+                <div class="phone">@member.PhoneNumber</div>
+                <div class="role"></div>
+            </div>
+        }
+    </div>
+</section>
