@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\membermanagement\\webapp\\views\\shared\\_layout_portal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\shared\\_layout_portal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\membermanagement\\webapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "WebApp\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "WebApp\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-21T08:16:17.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout_Portal.cshtml",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Views\\Shared\\_Layout_Portal.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Shared\\_Layout_Portal.cshtml",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Views\\Shared\\_Layout_Portal.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Shared\\_Layout_Portal.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T08:14:33.195Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

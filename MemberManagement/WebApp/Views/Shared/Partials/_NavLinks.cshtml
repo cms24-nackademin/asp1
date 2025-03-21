@@ -1,0 +1,18 @@
+﻿<nav class="nav-links">
+    <a class="nav-link @(Context.Request.Path == "/" ? "active": "")" asp-controller="Admin" asp-action="Index">
+        <i class="fa-duotone fa-solid fa-chart-tree-map"></i>
+        <span>Dashboard</span>
+    </a>
+    <a class="nav-link @(Context.Request.Path == "/admin/projects" ? "active": "")" asp-controller="Admin" asp-action="Projects">
+        <i class="fa-duotone fa-solid fa-briefcase"></i>
+        <span>Projects</span>
+    </a>
+    <a class="nav-link @(Context.Request.Path == "/admin/members" ? "active": "")" asp-controller="Admin" asp-action="Members">
+        <i class="fa-duotone fa-solid fa-user-group"></i>
+        <span>Team Members</span>
+    </a>
+    <a class="nav-link @(Context.Request.Path == "/admin/clients" ? "active": "")" asp-controller="Admin" asp-action="Clients">
+        <i class="fa-duotone fa-solid fa-handshake"></i>
+        <span>Clients</span>
+    </a>
+</nav>

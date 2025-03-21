@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+:root {
+    --font-standard: "Nunito", sans-serif;
+    --font-logo: "Comfortaa", sans-serif;
+    --font-fa-pro: "Font Awesome 6 Pro";
+    --blue-light-opacity: rgba(45, 125, 204, 0.10);
+    --blue-light: #DBEDFF;
+    --blue-semilight: #9DCEFF;
+    --blue: #2D99FF;
+    --blue-dark: #2D7DCC;
+    --blue-light-10: rgba(45, 125, 204, 0.10);
+    --green-light: #D8FFDF;
+    --green-semilight: #B3FFC0;
+    --green: #119B56;
+    --green-dark: #187848;
+    --yellow-light: #FFF6C7;
+    --yellow-semilight: #FFF3B4;
+    --yellow: #6C6102;
+    --yellow-dark: #8B7400;
+    --red-light: #FFEAE4;
+    --red-semilight: #FFB8A5;
+    --red: #DE3434;
+    --red-dark: #B83030;
+    --white-100: #FFFFFF;
+    --white-200: #F5F7FA;
+    --white-300: #F1F3F7;
+    --white-400: #F0F1F5;
+    --gray-100: #E8EAED;
+    --gray-200: #EBEEF2;
+    --gray-300: #E3E5E8;
+    --gray-400: #E8E8E8;
+    --gray-500: #DEDEDE;
+    --gray-600: #C6C8CC;
+    --gray-700: #9E9E9E;
+    --gray-800: #637085;
+    --dark-100: #1A1926;
+    --dark-200: #1C1D1F;
+    --dark-300: #202123;
+    --dark-400: #28263B;
+    --dark-500: #333333;
+    --dark-600: #38383B;
+    --dark-opacity-20: rgba(26, 25, 38, 0.2);
+    --dark-opacity-60: rgba(26, 25, 38, 0.6);
+    --box-shadow: 0 5px 5px 1px rgba(0,0,0, 0.05);
+    --text-color: var(--dark-400);
+    --text-muted-color: var(--gray-800);
+    --text-extra-muted-color: var(--gray-700);
+    --text-headline-color: var(--dark-100);
+    --background-color: var(--white-200);
+    --content-background-color: var(--white-100);
+    --sidebar-background-color: var(--white-100);
+    --orseperator-background-color: var(--white-100);
+    --border-color: var(--gray-500);
+    --border-focus-color: var(--blue-semilight);
+    --btn-text-color: var(--white-100);
+    --btn-border-color: var(--white-100);
+    --btn-background-color: var(--blue);
+    --btn-hover-text-color: var(--white-100);
+    --btn-hover-border-color: var(--white-100);
+    --btn-hover-background-color: var(--blue-dark);
+    --link-color: var(--blue);
+    --link-hover-color: var(--blue-dark);
+    --navlink-text-color: var(--dark-200);
+    --navlink-text-hover-color: var(--blue);
+    --navlink-text-active-color: var(--blue);
+    --navlink-background-color: transparent;
+    --navlink-background-hover-color: var(--blue-light);
+    --navlink-background-active-color: var(--blue-light-opacity);
+    --form-text-color: var(--dark-400);
+    --form-border-color: var(--white-100);
+    --form-background-color: var(--white-100);
+    --form-label-color: var(--dark-200);
+    --form-input-text-color: var(--dark-200);
+    --form-input-placeholder-color: var(--gray-600);
+    --form-input-background-color: var(--white-100);
+    --form-input-border-color: var(--gray-400);
+    --form-input-border-focus-color: var(--blue-semilight);
+    --form-error-input-text-color: var(--dark-200);
+    --form-error-input-background-color: var(--white-100);
+    --form-error-input-border-color: var(--red-semilight);
+    --form-error-input-border-focus-color: var(--blue-semilight);
+    --form-error-message-text-color: var(--red-dark);
+    --form-error-message-background-color: var(--red-light);
+    --form-error-message-border-color: var(--red-light);
+    --alert-notification-error-text-color: var(--red-dark);
+    --alert-notification-error-background-color: var(--red-light);
+    --card-text-color: var(--dark-400);
+    --card-border-color: var(--white-100);
+    --card-background-color: var(--white-100);
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font-standard);
+    font-style: normal;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: var(--font-standard);
+    margin: 0;
+    padding: 0;
+}
+
+h1, .h1 {
+    font-size: 36px;
+}
+
+h2, .h2 {
+    font-size: 32px;
+}
+
+h3, .h3 {
+    font-size: 28px;
+}
+
+h4, .h4 {
+    font-size: 24px;
+}
+
+h5, .h5 {
+    font-size: 20px;
+}
+
+h6, .h6 {
+    font-size: 18px;
+}
+
+.wrapper-centerscreen {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-portal {
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: minmax(80px, auto) 1fr;
+    grid-template-areas: "sidebar header" "sidebar main";
+}
+
+header,
+.header {
+    grid-area: header;
+    border-bottom: 1px solid var(--border-color);
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+aside,
+.sidebar {
+    grid-area: sidebar;
+    border-right: 1px solid var(--border-color);
+    padding: 1.5rem 2rem;
+    width: 270px;
+}
+
+main,
+.main {
+    grid-area: main;
+    padding: 1rem 2rem;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+    a:hover {
+        color: var(--link-hover-color);
+        text-decoration: underline;
+    }
+
+.link-logotype {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: var(--font-logo);
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+    .link-logotype a {
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+.nav-links {
+    margin-top: 3rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.nav-link {
+    font-size: 1em;
+    font-family: var(--font-standard);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--navlink-text-color);
+    background-color: var(--navlink-background-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+    .nav-link.active {
+        color: var(--navlink-text-active-color);
+        background-color: var(--navlink-background-active-color);
+    }
+
+    .nav-link:hover {
+        color: var(--navlink-text-hover-color);
+        background-color: var(--navlink-background-hover-color);
+        text-decoration: none;
+    }
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    cursor: pointer;
+    color: var(--btn-text-color);
+    border: 1px solid var(--btn-border-color);
+    background-color: var(--btn-background-color);
+    transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    border-radius: 10px;
+    font-size: 0.8em;
+    font-weight: 400;
+    font-family: var(--font-standard);
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-width: 130px;
+}
+
+    .btn:hover {
+        color: var(--btn-hover-text-color);
+        border: 1px solid var(--btn-hover-border-color);
+        background-color: var(--btn-hover-background-color);
+        text-decoration: none;
+    }
+
+.btn-add::before {
+    content: '\2b';
+    font-family: var(--font-fa-pro);
+}
+
+.btn-logout::before {
+    content: '\f2f5';
+    font-family: var(--font-fa-pro);
+}
+
+.btn-submit {
+    margin-top: 1rem;
+}
+
+.alert-notification {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+    .alert-notification.error {
+        background-color: var(--alert-notification-error-background-color);
+        color: var(--alert-notification-error-text-color);
+    }
+
+
+form {
+    width: 100%;
+}
+
+.form-footer {
+    margin-top: 3rem;
+}
+
+
+.form-group {
+    display: grid;
+    gap: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 1em;
+    font-weight: 500;
+    text-align: left;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    font-size: 1em;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--form-input-border-color);
+    transition: border-color 0.1s ease-in-out;
+    outline: none;
+}
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+        border-color: var(--form-input-border-focus-color);
+    }
+
+    input::placeholder,
+    select::placeholder,
+    textarea::placeholder {
+        color: var(--form-input-placeholder-color);
+        font-size: 0.9em;
+    }
+
+
+.card {
+    color: var(--card-text-color);
+    border: 1px solid var(--card-border-color);
+    background-color: var(--card-background-color);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: 14px;
+}
