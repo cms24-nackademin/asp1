@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\membermanagement\\webapp\\views\\admin\\members.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\admin\\members.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\membermanagement\\webapp\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\membermanagement\\webapp\\views\\admin\\projects.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\admin\\projects.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\membermanagement\\webapp\\views\\admin\\members.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\admin\\members.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\membermanagement\\webapp\\views\\admin\\clients.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -30,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Views\\Admin\\Index.cshtml",
               "RelativeDocumentMoniker": "WebApp\\Views\\Admin\\Index.cshtml",
@@ -51,8 +51,8 @@
               "Title": "Clients.cshtml",
               "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Views\\Admin\\Clients.cshtml",
               "RelativeDocumentMoniker": "WebApp\\Views\\Admin\\Clients.cshtml",
-              "ToolTip": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Views\\Admin\\Clients.cshtml*",
-              "RelativeToolTip": "WebApp\\Views\\Admin\\Clients.cshtml*",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Views\\Admin\\Clients.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Admin\\Clients.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-21T08:23:46.159Z",
@@ -60,20 +60,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Members.cshtml",
               "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Views\\Admin\\Members.cshtml",
               "RelativeDocumentMoniker": "WebApp\\Views\\Admin\\Members.cshtml",
               "ToolTip": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Views\\Admin\\Members.cshtml",
               "RelativeToolTip": "WebApp\\Views\\Admin\\Members.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-21T08:23:36.497Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Projects.cshtml",
               "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Views\\Admin\\Projects.cshtml",
               "RelativeDocumentMoniker": "WebApp\\Views\\Admin\\Projects.cshtml",
@@ -90,8 +90,8 @@
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "WebApp\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Controllers\\AdminController.cs*",
-              "RelativeToolTip": "WebApp\\Controllers\\AdminController.cs*",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "WebApp\\Controllers\\AdminController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T08:22:41.221Z",
