@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\membermanagement\\webapp\\views\\admin\\members.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\admin\\members.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\membermanagement\\webapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\membermanagement\\webapp\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\membermanagement\\webapp\\views\\admin\\projects.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\admin\\projects.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\membermanagement\\webapp\\views\\admin\\clients.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\admin\\clients.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\membermanagement\\webapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\membermanagement\\webapp\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABEE391E-6DDA-4870-9BCC-38582CB121C5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebApp\\Views\\Admin\\Index.cshtml",
-              "ToolTip": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "WebApp\\Views\\Admin\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-21T08:23:50.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Clients.cshtml",
-              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Views\\Admin\\Clients.cshtml",
-              "RelativeDocumentMoniker": "WebApp\\Views\\Admin\\Clients.cshtml",
-              "ToolTip": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Views\\Admin\\Clients.cshtml",
-              "RelativeToolTip": "WebApp\\Views\\Admin\\Clients.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-21T08:23:46.159Z",
+              "WhenOpened": "2025-03-21T10:06:11.329Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Members.cshtml",
-              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Views\\Admin\\Members.cshtml",
-              "RelativeDocumentMoniker": "WebApp\\Views\\Admin\\Members.cshtml",
-              "ToolTip": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Views\\Admin\\Members.cshtml",
-              "RelativeToolTip": "WebApp\\Views\\Admin\\Members.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-21T08:23:36.497Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Projects.cshtml",
-              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Views\\Admin\\Projects.cshtml",
-              "RelativeDocumentMoniker": "WebApp\\Views\\Admin\\Projects.cshtml",
-              "ToolTip": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Views\\Admin\\Projects.cshtml",
-              "RelativeToolTip": "WebApp\\Views\\Admin\\Projects.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-21T08:23:27.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "WebApp\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "WebApp\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T08:22:41.221Z",
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "WebApp\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "WebApp\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAA4BAAAAAAAAAAAAABwBAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-21T10:05:45.32Z",
               "EditorCaption": ""
             }
           ]

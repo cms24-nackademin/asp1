@@ -246,7 +246,7 @@ a {
     background-color: var(--btn-background-color);
     transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
     border-radius: 10px;
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: 400;
     font-family: var(--font-standard);
     text-decoration: none;
@@ -280,9 +280,9 @@ a {
 }
 
 .alert-notification {
+    position: absolute;
     padding: 0.5rem 1rem;
     border-radius: 10px;
-    margin: 2rem 0;
 }
 
     .alert-notification.error {
@@ -292,7 +292,9 @@ a {
 
 
 form {
+    position: relative;
     width: 100%;
+
 }
 
 .form-footer {
@@ -304,12 +306,12 @@ form {
     display: grid;
     gap: 0.2rem;
     margin-bottom: 1rem;
+    text-align: left;
 }
 
 label {
     font-size: 1em;
     font-weight: 500;
-    text-align: left;
 }
 
 input,
@@ -339,10 +341,46 @@ textarea {
 
 
 .card {
+    position: relative;
     color: var(--card-text-color);
     border: 1px solid var(--card-border-color);
     background-color: var(--card-background-color);
     box-shadow: var(--box-shadow);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 14px;
+}
+    .card .card-header {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .card .card-body {
+        padding: 1rem 2rem;
+    }
+
+    .card .card-footer {
+        margin-top: 1rem;
+    }
+
+
+#login {
+    position: relative;
+    width: 80dvw;
+    text-align: center;
+}
+
+    #login .card-header {
+        margin-bottom: 4rem;
+    }
+
+    #login .alert-notification {
+        top: -60px;
+        left: 0;
+        right: 0;
+    }
+
+@media(width >= 768px) {
+    #login {
+    width: 500px;
+    }
 }
