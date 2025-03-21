@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "81nemuaTq49sQTYbkg6wY98prqyMVGPOpksf6qUoYG0=",
+  "Hash": "qooHKyZuP1icXne8+9jYen8uw15wTlCZBpnlfDP3UuI=",
   "Source": "WebApp",
   "BasePath": "_content/WebApp",
   "Mode": "Default",
@@ -59,12 +59,12 @@
       "OriginalItemSpec": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-srwmypad0c.gz",
+      "Identity": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-mttphmkt1f.gz",
       "SourceId": "WebApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/WebApp",
-      "RelativePath": "css/site#[.{fingerprint=srwmypad0c}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=mttphmkt1f}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -73,8 +73,8 @@
       "RelatedAsset": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "2e5vrymjc2",
-      "Integrity": "ChBSr71nArBQCnD3vEVprHCzYpPM7qHd4KL0BMl2G+M=",
+      "Fingerprint": "dalz9mkx4s",
+      "Integrity": "e2ge4Ag8kB+kfzpFBtjpCEFoQZMjYYzwIV/rstAn40w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\wwwroot\\css\\site.css"
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "srwmypad0c",
-      "Integrity": "aJUhta/P0uUPhTfHPBP1/cjTAMC1UveH8yJbqivKb8E=",
+      "Fingerprint": "mttphmkt1f",
+      "Integrity": "OqzXYCQwrEgs2mfXwsrkM4FQS+Bn1cvRhGyii4/8/lc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -188,12 +188,12 @@
   "Endpoints": [
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-srwmypad0c.gz",
+      "AssetFile": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-mttphmkt1f.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000467071462"
+          "Quality": "0.000443852641"
         }
       ],
       "ResponseHeaders": [
@@ -203,15 +203,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2140"
+          "Value": "2252"
         },
         {
           "Name": "ETag",
-          "Value": "\"ChBSr71nArBQCnD3vEVprHCzYpPM7qHd4KL0BMl2G+M=\""
+          "Value": "\"e2ge4Ag8kB+kfzpFBtjpCEFoQZMjYYzwIV/rstAn40w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 10:30:10 GMT"
+          "Value": "Fri, 21 Mar 2025 11:25:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -231,13 +231,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"aJUhta/P0uUPhTfHPBP1/cjTAMC1UveH8yJbqivKb8E=\""
+          "Value": "W/\"OqzXYCQwrEgs2mfXwsrkM4FQS+Bn1cvRhGyii4/8/lc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-aJUhta/P0uUPhTfHPBP1/cjTAMC1UveH8yJbqivKb8E="
+          "Value": "sha256-OqzXYCQwrEgs2mfXwsrkM4FQS+Bn1cvRhGyii4/8/lc="
         }
       ]
     },
@@ -252,7 +252,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9350"
+          "Value": "10263"
         },
         {
           "Name": "Content-Type",
@@ -260,11 +260,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aJUhta/P0uUPhTfHPBP1/cjTAMC1UveH8yJbqivKb8E=\""
+          "Value": "\"OqzXYCQwrEgs2mfXwsrkM4FQS+Bn1cvRhGyii4/8/lc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 10:30:10 GMT"
+          "Value": "Fri, 21 Mar 2025 11:25:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -274,13 +274,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-aJUhta/P0uUPhTfHPBP1/cjTAMC1UveH8yJbqivKb8E="
+          "Value": "sha256-OqzXYCQwrEgs2mfXwsrkM4FQS+Bn1cvRhGyii4/8/lc="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-srwmypad0c.gz",
+      "AssetFile": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-mttphmkt1f.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -289,7 +289,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2140"
+          "Value": "2252"
         },
         {
           "Name": "Content-Type",
@@ -297,11 +297,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ChBSr71nArBQCnD3vEVprHCzYpPM7qHd4KL0BMl2G+M=\""
+          "Value": "\"e2ge4Ag8kB+kfzpFBtjpCEFoQZMjYYzwIV/rstAn40w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 10:30:10 GMT"
+          "Value": "Fri, 21 Mar 2025 11:25:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -319,18 +319,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ChBSr71nArBQCnD3vEVprHCzYpPM7qHd4KL0BMl2G+M="
+          "Value": "sha256-e2ge4Ag8kB+kfzpFBtjpCEFoQZMjYYzwIV/rstAn40w="
         }
       ]
     },
     {
-      "Route": "css/site.srwmypad0c.css",
-      "AssetFile": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-srwmypad0c.gz",
+      "Route": "css/site.mttphmkt1f.css",
+      "AssetFile": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-mttphmkt1f.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000467071462"
+          "Quality": "0.000443852641"
         }
       ],
       "ResponseHeaders": [
@@ -340,15 +340,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2140"
+          "Value": "2252"
         },
         {
           "Name": "ETag",
-          "Value": "\"ChBSr71nArBQCnD3vEVprHCzYpPM7qHd4KL0BMl2G+M=\""
+          "Value": "\"e2ge4Ag8kB+kfzpFBtjpCEFoQZMjYYzwIV/rstAn40w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 10:30:10 GMT"
+          "Value": "Fri, 21 Mar 2025 11:25:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -368,13 +368,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"aJUhta/P0uUPhTfHPBP1/cjTAMC1UveH8yJbqivKb8E=\""
+          "Value": "W/\"OqzXYCQwrEgs2mfXwsrkM4FQS+Bn1cvRhGyii4/8/lc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "srwmypad0c"
+          "Value": "mttphmkt1f"
         },
         {
           "Name": "label",
@@ -382,12 +382,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-aJUhta/P0uUPhTfHPBP1/cjTAMC1UveH8yJbqivKb8E="
+          "Value": "sha256-OqzXYCQwrEgs2mfXwsrkM4FQS+Bn1cvRhGyii4/8/lc="
         }
       ]
     },
     {
-      "Route": "css/site.srwmypad0c.css",
+      "Route": "css/site.mttphmkt1f.css",
       "AssetFile": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -397,7 +397,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9350"
+          "Value": "10263"
         },
         {
           "Name": "Content-Type",
@@ -405,11 +405,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aJUhta/P0uUPhTfHPBP1/cjTAMC1UveH8yJbqivKb8E=\""
+          "Value": "\"OqzXYCQwrEgs2mfXwsrkM4FQS+Bn1cvRhGyii4/8/lc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 10:30:10 GMT"
+          "Value": "Fri, 21 Mar 2025 11:25:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -419,7 +419,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "srwmypad0c"
+          "Value": "mttphmkt1f"
         },
         {
           "Name": "label",
@@ -427,13 +427,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-aJUhta/P0uUPhTfHPBP1/cjTAMC1UveH8yJbqivKb8E="
+          "Value": "sha256-OqzXYCQwrEgs2mfXwsrkM4FQS+Bn1cvRhGyii4/8/lc="
         }
       ]
     },
     {
-      "Route": "css/site.srwmypad0c.css.gz",
-      "AssetFile": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-srwmypad0c.gz",
+      "Route": "css/site.mttphmkt1f.css.gz",
+      "AssetFile": "C:\\Projects\\cms24\\asp-1\\MemberManagement\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-mttphmkt1f.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -442,7 +442,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2140"
+          "Value": "2252"
         },
         {
           "Name": "Content-Type",
@@ -450,11 +450,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ChBSr71nArBQCnD3vEVprHCzYpPM7qHd4KL0BMl2G+M=\""
+          "Value": "\"e2ge4Ag8kB+kfzpFBtjpCEFoQZMjYYzwIV/rstAn40w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 10:30:10 GMT"
+          "Value": "Fri, 21 Mar 2025 11:25:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -472,7 +472,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "srwmypad0c"
+          "Value": "mttphmkt1f"
         },
         {
           "Name": "label",
@@ -480,7 +480,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ChBSr71nArBQCnD3vEVprHCzYpPM7qHd4KL0BMl2G+M="
+          "Value": "sha256-e2ge4Ag8kB+kfzpFBtjpCEFoQZMjYYzwIV/rstAn40w="
         }
       ]
     },

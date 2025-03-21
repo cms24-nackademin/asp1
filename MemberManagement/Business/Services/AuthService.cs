@@ -9,6 +9,7 @@ public interface IAuthService
 {
     Task<bool> AlreadyExistsAsync(string email);
     Task<bool> LoginAsync(UserLoginForm loginForm);
+    Task<bool> SignUpAsync(UserSignUpForm signUpForm);
 }
 
 public class AuthService(UserManager<UserEntity> userManager, SignInManager<UserEntity> signInManager) : IAuthService

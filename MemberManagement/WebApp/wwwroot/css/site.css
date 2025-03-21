@@ -304,9 +304,15 @@ form {
 
 .form-group {
     display: grid;
-    gap: 0.2rem;
+    gap: 0.3rem;
     margin-bottom: 1rem;
     text-align: left;
+}
+
+.field-label-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 label {
@@ -339,6 +345,14 @@ textarea {
         font-size: 0.9em;
     }
 
+.field-validation-error {
+    font-size: 0.7em;
+    color: var(--form-error-message-text-color);
+    background-color: var(--form-error-message-background-color);
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
 
 .card {
     position: relative;
@@ -346,7 +360,7 @@ textarea {
     border: 1px solid var(--card-border-color);
     background-color: var(--card-background-color);
     box-shadow: var(--box-shadow);
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 14px;
 }
     .card .card-header {
@@ -355,7 +369,7 @@ textarea {
     }
 
     .card .card-body {
-        padding: 1rem 2rem;
+        padding: 0 2rem;
     }
 
     .card .card-footer {
@@ -369,8 +383,16 @@ textarea {
     text-align: center;
 }
 
+    #login.card {
+        padding: 2rem;
+    }
+
     #login .card-header {
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    #login .card-footer {
+        margin-top: 2rem;
     }
 
     #login .alert-notification {
@@ -381,6 +403,35 @@ textarea {
 
 @media(width >= 768px) {
     #login {
-    width: 500px;
+        width: 500px;
+    }
+}
+
+#signup {
+    position: relative;
+    width: 80dvw;
+    text-align: center;
+}
+    #signup.card {
+        padding: 2rem;
+    }
+
+    #signup .card-header {
+        margin-bottom: 2rem;
+    }
+
+    #signup .card-footer {
+        margin-top: 2rem;
+    }
+
+    #signup .alert-notification {
+        top: -60px;
+        left: 0;
+        right: 0;
+    }
+
+@media(width >= 768px) {
+    #signup {
+        width: 550px;
     }
 }

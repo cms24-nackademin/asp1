@@ -26,7 +26,7 @@ public class AuthController(IAuthService authService) : Controller
                 return LocalRedirect(returnUrl);
         }
 
-        ViewBag.ErrorMessage = "Incorrect email or password";
+        ViewBag.ErrorMessage = "No user account found, try a different email or password.";
         return View(userLoginForm);
     }
 
