@@ -432,6 +432,6 @@ textarea {
 
 @media(width >= 768px) {
     #signup {
-        width: 550px;
+        width: 500px;
     }
 }
