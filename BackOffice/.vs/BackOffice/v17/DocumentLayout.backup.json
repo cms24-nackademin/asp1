@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Projects\\cms24\\asp-1\\BackOffice\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C67FF611-7D91-4C7E-8E5E-CA60F15DD72B}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\backoffice\\webapp\\views\\shared\\partials\\_navlinks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C67FF611-7D91-4C7E-8E5E-CA60F15DD72B}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\shared\\partials\\_navlinks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C67FF611-7D91-4C7E-8E5E-CA60F15DD72B}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\backoffice\\webapp\\controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C67FF611-7D91-4C7E-8E5E-CA60F15DD72B}|WebApp\\WebApp.csproj|solutionrelative:webapp\\controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C67FF611-7D91-4C7E-8E5E-CA60F15DD72B}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\backoffice\\webapp\\controllers\\overviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C67FF611-7D91-4C7E-8E5E-CA60F15DD72B}|WebApp\\WebApp.csproj|solutionrelative:webapp\\controllers\\overviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C67FF611-7D91-4C7E-8E5E-CA60F15DD72B}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\backoffice\\webapp\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C67FF611-7D91-4C7E-8E5E-CA60F15DD72B}|WebApp\\WebApp.csproj|solutionrelative:webapp\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_NavLinks.cshtml",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\Views\\Shared\\Partials\\_NavLinks.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Shared\\Partials\\_NavLinks.cshtml",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\Views\\Shared\\Partials\\_NavLinks.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Shared\\Partials\\_NavLinks.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T13:52:15.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProjectsController.cs",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\Controllers\\ProjectsController.cs",
+              "RelativeDocumentMoniker": "WebApp\\Controllers\\ProjectsController.cs",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\Controllers\\ProjectsController.cs",
+              "RelativeToolTip": "WebApp\\Controllers\\ProjectsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T13:50:49.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OverviewController.cs",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\Controllers\\OverviewController.cs",
+              "RelativeDocumentMoniker": "WebApp\\Controllers\\OverviewController.cs",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\Controllers\\OverviewController.cs",
+              "RelativeToolTip": "WebApp\\Controllers\\OverviewController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T13:50:48.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MembersController.cs",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\Controllers\\MembersController.cs",
+              "RelativeDocumentMoniker": "WebApp\\Controllers\\MembersController.cs",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\Controllers\\MembersController.cs",
+              "RelativeToolTip": "WebApp\\Controllers\\MembersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T13:50:38.068Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

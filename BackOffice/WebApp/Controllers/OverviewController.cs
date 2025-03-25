@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApp.Controllers;
 
-
+[Authorize]
 public class OverviewController : Controller
 {
     [Route("admin/overview")]

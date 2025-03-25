@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Rg3HbfCzr+qcaU5/wEWk6bXMddOZFolyQCNhJfI0mgY=",
+  "Hash": "e/jq9mZUSz77gKBHpNsRouNrJPLmzgDwJlY927K8aZA=",
   "Source": "WebApp",
   "BasePath": "_content/WebApp",
   "Mode": "Default",
@@ -80,12 +80,12 @@
       "OriginalItemSpec": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\wwwroot\\images\\avatars\\avatar-template.svg"
     },
     {
-      "Identity": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-1jvx3ey5x6.gz",
+      "Identity": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-d1hbii1roh.gz",
       "SourceId": "WebApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/WebApp",
-      "RelativePath": "css/site#[.{fingerprint=1jvx3ey5x6}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=d1hbii1roh}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -94,8 +94,8 @@
       "RelatedAsset": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "o548f1hh89",
-      "Integrity": "DCpfCg9kOg0/rp2WSesnP5Dmu2rF2TWuHP+6Xw7GW5o=",
+      "Fingerprint": "kets810zhc",
+      "Integrity": "JBAA+gUXv12u8g7u9eU77dul4ijIXByDoyRk6JKNxTU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\wwwroot\\css\\site.css"
@@ -136,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "1jvx3ey5x6",
-      "Integrity": "3Vh6nlnV1Ygq5Uh16W+N0Lo2vt0UWQ3q64nsYeectls=",
+      "Fingerprint": "d1hbii1roh",
+      "Integrity": "AdXwj40Amd8wzU+sTxmk1xkg318TgMMBYvfYqrWyvTk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -229,13 +229,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.1jvx3ey5x6.css",
-      "AssetFile": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-1jvx3ey5x6.gz",
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-d1hbii1roh.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000246244767"
+          "Quality": "0.000240096038"
         }
       ],
       "ResponseHeaders": [
@@ -245,19 +245,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4060"
+          "Value": "4164"
         },
         {
           "Name": "ETag",
-          "Value": "\"DCpfCg9kOg0/rp2WSesnP5Dmu2rF2TWuHP+6Xw7GW5o=\""
+          "Value": "\"JBAA+gUXv12u8g7u9eU77dul4ijIXByDoyRk6JKNxTU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 02:09:26 GMT"
+          "Value": "Tue, 25 Mar 2025 13:46:51 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -273,26 +273,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"3Vh6nlnV1Ygq5Uh16W+N0Lo2vt0UWQ3q64nsYeectls=\""
+          "Value": "W/\"AdXwj40Amd8wzU+sTxmk1xkg318TgMMBYvfYqrWyvTk=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "1jvx3ey5x6"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-3Vh6nlnV1Ygq5Uh16W+N0Lo2vt0UWQ3q64nsYeectls="
+          "Value": "sha256-AdXwj40Amd8wzU+sTxmk1xkg318TgMMBYvfYqrWyvTk="
         }
       ]
     },
     {
-      "Route": "css/site.1jvx3ey5x6.css",
+      "Route": "css/site.css",
       "AssetFile": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -302,7 +294,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23562"
+          "Value": "24269"
         },
         {
           "Name": "Content-Type",
@@ -310,11 +302,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3Vh6nlnV1Ygq5Uh16W+N0Lo2vt0UWQ3q64nsYeectls=\""
+          "Value": "\"AdXwj40Amd8wzU+sTxmk1xkg318TgMMBYvfYqrWyvTk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 02:09:26 GMT"
+          "Value": "Tue, 25 Mar 2025 13:46:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AdXwj40Amd8wzU+sTxmk1xkg318TgMMBYvfYqrWyvTk="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-d1hbii1roh.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4164"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JBAA+gUXv12u8g7u9eU77dul4ijIXByDoyRk6JKNxTU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 13:46:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JBAA+gUXv12u8g7u9eU77dul4ijIXByDoyRk6JKNxTU="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.d1hbii1roh.css",
+      "AssetFile": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-d1hbii1roh.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000240096038"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4164"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JBAA+gUXv12u8g7u9eU77dul4ijIXByDoyRk6JKNxTU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 13:46:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"AdXwj40Amd8wzU+sTxmk1xkg318TgMMBYvfYqrWyvTk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d1hbii1roh"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AdXwj40Amd8wzU+sTxmk1xkg318TgMMBYvfYqrWyvTk="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.d1hbii1roh.css",
+      "AssetFile": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24269"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AdXwj40Amd8wzU+sTxmk1xkg318TgMMBYvfYqrWyvTk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 13:46:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -324,7 +461,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1jvx3ey5x6"
+          "Value": "d1hbii1roh"
         },
         {
           "Name": "label",
@@ -332,13 +469,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-3Vh6nlnV1Ygq5Uh16W+N0Lo2vt0UWQ3q64nsYeectls="
+          "Value": "sha256-AdXwj40Amd8wzU+sTxmk1xkg318TgMMBYvfYqrWyvTk="
         }
       ]
     },
     {
-      "Route": "css/site.1jvx3ey5x6.css.gz",
-      "AssetFile": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-1jvx3ey5x6.gz",
+      "Route": "css/site.d1hbii1roh.css.gz",
+      "AssetFile": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-d1hbii1roh.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -347,7 +484,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4060"
+          "Value": "4164"
         },
         {
           "Name": "Content-Type",
@@ -355,11 +492,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DCpfCg9kOg0/rp2WSesnP5Dmu2rF2TWuHP+6Xw7GW5o=\""
+          "Value": "\"JBAA+gUXv12u8g7u9eU77dul4ijIXByDoyRk6JKNxTU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 02:09:26 GMT"
+          "Value": "Tue, 25 Mar 2025 13:46:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -377,7 +514,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1jvx3ey5x6"
+          "Value": "d1hbii1roh"
         },
         {
           "Name": "label",
@@ -385,144 +522,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-DCpfCg9kOg0/rp2WSesnP5Dmu2rF2TWuHP+6Xw7GW5o="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-1jvx3ey5x6.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000246244767"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4060"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DCpfCg9kOg0/rp2WSesnP5Dmu2rF2TWuHP+6Xw7GW5o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 02:09:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"3Vh6nlnV1Ygq5Uh16W+N0Lo2vt0UWQ3q64nsYeectls=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-3Vh6nlnV1Ygq5Uh16W+N0Lo2vt0UWQ3q64nsYeectls="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "23562"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3Vh6nlnV1Ygq5Uh16W+N0Lo2vt0UWQ3q64nsYeectls=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 02:09:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-3Vh6nlnV1Ygq5Uh16W+N0Lo2vt0UWQ3q64nsYeectls="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\obj\\Debug\\net9.0\\compressed\\fspdjdrw69-1jvx3ey5x6.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4060"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DCpfCg9kOg0/rp2WSesnP5Dmu2rF2TWuHP+6Xw7GW5o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 02:09:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-DCpfCg9kOg0/rp2WSesnP5Dmu2rF2TWuHP+6Xw7GW5o="
+          "Value": "sha256-JBAA+gUXv12u8g7u9eU77dul4ijIXByDoyRk6JKNxTU="
         }
       ]
     },

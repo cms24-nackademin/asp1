@@ -1,6 +1,13 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        (function () {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.documentElement.setAttribute('data-mode', 'dark')
+            }
+        })()
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <partial name="_Title" />
@@ -11,7 +18,7 @@
 </head>
 <body>
 
-    <div class="wrapper-centerscreen">
+    <div class="centerscreen-wrapper">
         <main class="main">
             @RenderBody()
         </main>

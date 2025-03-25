@@ -287,7 +287,6 @@ C:\Projects\cms24\asp-1\BackOffice\WebApp\obj\Debug\net9.0\WebApp.RazorAssemblyI
 C:\Projects\cms24\asp-1\BackOffice\WebApp\obj\Debug\net9.0\WebApp.RazorAssemblyInfo.cs
 C:\Projects\cms24\asp-1\BackOffice\WebApp\obj\Debug\net9.0\WebApp.sourcelink.json
 C:\Projects\cms24\asp-1\BackOffice\WebApp\obj\Debug\net9.0\scopedcss\bundle\WebApp.styles.css
-C:\Projects\cms24\asp-1\BackOffice\WebApp\obj\Debug\net9.0\compressed\fspdjdrw69-1jvx3ey5x6.gz
 C:\Projects\cms24\asp-1\BackOffice\WebApp\obj\Debug\net9.0\compressed\15ykilufbm-61n19gt1b8.gz
 C:\Projects\cms24\asp-1\BackOffice\WebApp\obj\Debug\net9.0\compressed\n5fu54hth2-abj3u8yy14.gz
 C:\Projects\cms24\asp-1\BackOffice\WebApp\obj\Debug\net9.0\compressed\b4b5dbzdds-gt4kjeqp0f.gz
@@ -351,3 +350,4 @@ C:\Projects\cms24\asp-1\BackOffice\WebApp\bin\Debug\net9.0\Authentication.dll
 C:\Projects\cms24\asp-1\BackOffice\WebApp\bin\Debug\net9.0\Authentication.pdb
 C:\Projects\cms24\asp-1\BackOffice\WebApp\obj\Debug\net9.0\WebApp.csproj.AssemblyReference.cache
 C:\Projects\cms24\asp-1\BackOffice\WebApp\obj\Debug\net9.0\compressed\5wk3qh7byk-w3wfv5wzqi.gz
+C:\Projects\cms24\asp-1\BackOffice\WebApp\obj\Debug\net9.0\compressed\fspdjdrw69-d1hbii1roh.gz

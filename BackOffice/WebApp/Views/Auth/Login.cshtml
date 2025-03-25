@@ -21,11 +21,11 @@
 
             <div class="form-group">
                 <label asp-for="Email"></label>
-                <input asp-for="Email" />
+                <input asp-for="Email" value="@Model?.Email" />
             </div>
             <div class="form-group">
                 <label asp-for="Password"></label>
-                <input asp-for="Password" />
+                <input asp-for="Password" value="@Model?.Password" />
             </div>
 
             <div class="form-group">

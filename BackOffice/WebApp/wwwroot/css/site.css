@@ -210,6 +210,13 @@ html, body {
     }
 }
 
+.centerscreen-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+}
+
 /* ============================= */
 /*         Header & Logotyp      */
 /* ============================= */
@@ -378,6 +385,10 @@ aside .btn-close {
 
 .border {
     border: 1px solid red;
+}
+
+.error {
+    color: var(--alert-notification-error-text-color);
 }
 
 /* ============================= */
@@ -549,7 +560,6 @@ a {
 form {
     width: 100%;
     color: var(--text-color);
-    background-color: var(--form-background-color);
     border-radius: 16px;
 }
 
@@ -558,6 +568,7 @@ form {
         display: grid;
         gap: 0.2rem;
         margin-bottom: 1.2rem;
+        text-align: left;
     }
 
     form .field-group {
@@ -752,6 +763,32 @@ form {
     .card .card-footer {
         margin-top: 2rem;
     }
+
+/* ============================= */
+/*           Logga in            */
+/* ============================= */
+#login {
+    width: 600px;
+    text-align: center;
+}
+    #login .card-header {
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+/* ============================= */
+/*           Sign Up            */
+/* ============================= */
+#signup {
+    width: 600px;
+    text-align: center;
+}
+
+    #signup .card-header {
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
 
 /* ============================= */
 /*           Modal             */
