@@ -87,10 +87,10 @@ function initToggles() {
             toggle.addEventListener('change', function () {
                 if (this.checked) {
                     document.documentElement.setAttribute('data-mode', 'dark')
-                    localStorage.setItem('theme', 'dark');´´
+                    localStorage.setItem('theme', 'dark')
                 } else {
                     document.documentElement.removeAttribute('data-mode')
-                    localStorage.setItem('theme', 'light');
+                    localStorage.setItem('theme', 'light')
                 }
             });
         }

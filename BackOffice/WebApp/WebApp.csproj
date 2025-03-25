@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
+    <ProjectReference Include="..\Authentication\Authentication.csproj" />
   </ItemGroup>
 
 </Project>

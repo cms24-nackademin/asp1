@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35913.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{C67FF611-7D91-4C7E-8E5E-CA60F15DD72B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication", "Authentication\Authentication.csproj", "{AFB9A85B-0688-4257-812C-1EBCC131D67D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C67FF611-7D91-4C7E-8E5E-CA60F15DD72B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C67FF611-7D91-4C7E-8E5E-CA60F15DD72B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C67FF611-7D91-4C7E-8E5E-CA60F15DD72B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFB9A85B-0688-4257-812C-1EBCC131D67D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFB9A85B-0688-4257-812C-1EBCC131D67D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFB9A85B-0688-4257-812C-1EBCC131D67D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFB9A85B-0688-4257-812C-1EBCC131D67D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

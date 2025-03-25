@@ -1,12 +1,105 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Projects\\cms24\\asp-1\\BackOffice\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C67FF611-7D91-4C7E-8E5E-CA60F15DD72B}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\backoffice\\webapp\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C67FF611-7D91-4C7E-8E5E-CA60F15DD72B}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C67FF611-7D91-4C7E-8E5E-CA60F15DD72B}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\backoffice\\webapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C67FF611-7D91-4C7E-8E5E-CA60F15DD72B}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C67FF611-7D91-4C7E-8E5E-CA60F15DD72B}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\backoffice\\webapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C67FF611-7D91-4C7E-8E5E-CA60F15DD72B}|WebApp\\WebApp.csproj|solutionrelative:webapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB9A85B-0688-4257-812C-1EBCC131D67D}|Authentication\\Authentication.csproj|c:\\projects\\cms24\\asp-1\\backoffice\\authentication\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFB9A85B-0688-4257-812C-1EBCC131D67D}|Authentication\\Authentication.csproj|solutionrelative:authentication\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C67FF611-7D91-4C7E-8E5E-CA60F15DD72B}|WebApp\\WebApp.csproj|c:\\projects\\cms24\\asp-1\\backoffice\\webapp\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C67FF611-7D91-4C7E-8E5E-CA60F15DD72B}|WebApp\\WebApp.csproj|solutionrelative:webapp\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T10:50:22.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T10:50:00.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "WebApp\\Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "WebApp\\Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T10:38:40.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "WebApp\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "WebApp\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAYwCgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T10:37:17.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\BackOffice\\Authentication\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Authentication\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\BackOffice\\Authentication\\Services\\AuthService.cs",
+              "RelativeToolTip": "Authentication\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA3wBcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T10:31:40.805Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

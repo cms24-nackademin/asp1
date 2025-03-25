@@ -1,5 +1,0 @@
-C:\Projects\BackOffice\WebApp\wwwroot\favicon.ico
-C:\Projects\BackOffice\WebApp\wwwroot\js\site.js
-C:\Projects\BackOffice\WebApp\wwwroot\images\avatars\avatar-template.svg
-C:\Projects\BackOffice\WebApp\wwwroot\css\site.css
-C:\Projects\BackOffice\WebApp\wwwroot\images\alpha-logotype-icon.svg
