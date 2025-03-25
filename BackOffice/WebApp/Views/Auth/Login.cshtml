@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<section id="login" class="card">
+    @if (!string.IsNullOrEmpty(ViewBag?.ErrorMessage))
+    {
+        <div class="alert-notification error">
+            @ViewBag?.ErrorMessage
+        </div>
+    }
+    
+    <div class="card-header">
+        <h1>@ViewData["Title"]</h1>
+    </div>
+
+    <div class="card-body">
+        <form asp-controller="Auth" asp-action="Login" method="post" enctype="multipart/form-data" novalidate>
+            <input type="hidden" name="returnUrl" value="@ViewBag?.ReturnUrl" />
+
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-submit">Log In</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="card-footer">
+        <span>Don't have an account?</span>
+        <a asp-controller="Auth" asp-action="SignUp">Sign Up</a>
+    </div>
+
+</section>

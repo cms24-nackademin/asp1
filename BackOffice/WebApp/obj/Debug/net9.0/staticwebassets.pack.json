@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\wwwroot\\images\\alpha-logotype-icon.svg",
+      "PackagePath": "staticwebassets\\images\\alpha-logotype-icon.svg"
+    },
+    {
+      "Id": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\wwwroot\\images\\avatars\\avatar-template.svg",
+      "PackagePath": "staticwebassets\\images\\avatars\\avatar-template.svg"
+    },
+    {
+      "Id": "C:\\Projects\\cms24\\asp-1\\BackOffice\\WebApp\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.WebApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.WebApp.props",
+      "PackagePath": "build\\WebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.WebApp.props",
+      "PackagePath": "buildMultiTargeting\\WebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.WebApp.props",
+      "PackagePath": "buildTransitive\\WebApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,927 @@
+/* Importera typsnitt */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+/* ============================= */
+/*  CSS-variabler & inställningar */
+/* ============================= */
+:root {
+    /* Typsnitt */
+    --font-standard: "Nunito", sans-serif;
+    --font-logo: "Comfortaa", sans-serif;
+    --font-fa-pro: "Font Awesome 6 Pro";
+    /* Färgpalett */
+    --blue-light-opacity: rgba(45, 125, 204, 0.10);
+    --blue-light: #DBEDFF;
+    --blue-semilight: #9DCEFF;
+    --blue: #2D99FF;
+    --blue-dark: #2D7DCC;
+    --blue-light-10: rgba(45, 125, 204, 0.10);
+    --green-light: #D8FFDF;
+    --green-semilight: #B3FFC0;
+    --green: #119B56;
+    --green-dark: #187848;
+    --yellow-light: #FFF6C7;
+    --yellow-semilight: #FFF3B4;
+    --yellow: #6C6102;
+    --yellow-dark: #8B7400;
+    --red-light: #FFEAE4;
+    --red-semilight: #FFB8A5;
+    --red: #DE3434;
+    --red-dark: #B83030;
+    --white-100: #FFFFFF;
+    --white-200: #F5F7FA;
+    --white-300: #F1F3F7;
+    --white-400: #F0F1F5;
+    --gray-100: #E8EAED;
+    --gray-200: #EBEEF2;
+    --gray-300: #E3E5E8;
+    --gray-400: #E8E8E8;
+    --gray-500: #DEDEDE;
+    --gray-600: #C6C8CC;
+    --gray-700: #9E9E9E;
+    --gray-800: #637085;
+    --dark-100: #1A1926;
+    --dark-200: #1C1D1F;
+    --dark-300: #202123;
+    --dark-400: #28263B;
+    --dark-500: #333333;
+    --dark-600: #38383B;
+    --dark-700: #414144;
+    --dark-opacity-20: rgba(26, 25, 38, 0.2);
+    --dark-opacity-60: rgba(26, 25, 38, 0.6);
+    /* Skuggor, kanter & delare */
+    --box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.05);
+    --border-color: var(--gray-500);
+    --border-focus-color: var(--blue-semilight);
+    --divider-color: var(--gray-500);
+    /* Text & bakgrund */
+    --text-color: var(--dark-400);
+    --text-muted-color: var(--gray-800);
+    --text-extra-muted-color: var(--gray-600);
+    --text-headline-color: var(--dark-100);
+    --background-color: var(--white-200);
+    --modal-background-color: var(--dark-opacity-20);
+    --orseperator-background-color: var(--white-100);
+    /* Knappar */
+    --btn-text-color: var(--white-100);
+    --btn-border-color: var(--white-100);
+    --btn-background-color: var(--blue);
+    --btn-hover-text-color: var(--white-100);
+    --btn-hover-border-color: var(--white-100);
+    --btn-hover-background-color: var(--blue-dark);
+    /* Länkar */
+    --link-color: var(--blue);
+    --link-hover-color: var(--blue-dark);
+    /* Navigation */
+    --navlink-text-color: var(--dark-200);
+    --navlink-text-hover-color: var(--blue);
+    --navlink-text-active-color: var(--blue);
+    --navlink-background-color: transparent;
+    --navlink-background-hover-color: var(--blue-light-opacity);
+    --navlink-background-active-color: var(--blue-light-opacity);
+    /* Formulär */
+    --form-text-color: var(--dark-400);
+    --form-border-color: var(--white-100);
+    --form-background-color: var(--white-100);
+    --form-label-color: var(--dark-200);
+    --form-input-text-color: var(--dark-200);
+    --form-input-placeholder-color: var(--gray-600);
+    --form-input-background-color: var(--white-100);
+    --form-input-border-color: var(--gray-400);
+    --form-input-border-focus-color: var(--blue-semilight);
+    --form-error-input-text-color: var(--dark-200);
+    --form-error-input-background-color: var(--white-100);
+    --form-error-input-border-color: var(--red-semilight);
+    --form-error-input-border-focus-color: var(--blue-semilight);
+    --form-error-message-text-color: var(--red-dark);
+    --form-error-message-background-color: var(--red-light);
+    --form-error-message-border-color: var(--red-light);
+    --form-search-input-text-color: var(--dark-200);
+    --form-search-input-placeholder-color: var(--gray-600);
+    --form-search-input-background-color: var(--white-200);
+    --form-search-input-border-color: var(--white-200);
+    --form-search-input-border-focus-color: var(--blue-semilight);
+    /* Aviseringar */
+    --alert-notification-error-text-color: var(--red-dark);
+    --alert-notification-error-background-color: var(--red-light);
+    /* Kort */
+    --card-text-color: var(--dark-400);
+    --card-border-color: var(--white-100);
+    --card-background-color: var(--white-100);
+    /* profile */
+    --profile-info-background-color: var(--white-200);
+    --profile-info-text-color: var(--dark-400);
+}
+
+[data-mode="dark"] {
+    /* Skuggor & kanter */
+    --box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.05);
+    --border-color: var(--dark-400);
+    --border-focus-color: var(--blue-semilight);
+    --divider-color: var(--dark-700);
+    /* Text & bakgrund */
+    --text-color: var(--white-400);
+    --text-muted-color: var(--gray-800);
+    --text-extra-muted-color: var(--gray-600);
+    --text-headline-color: var(--white-100);
+    --background-color: var(--dark-100);
+    --modal-background-color: var(--dark-opacity-20);
+    --orseperator-background-color: var(--white-100);
+    /* Länkar */
+    --link-color: var(--blue);
+    --link-hover-color: var(--blue-dark);
+    /* Navigation */
+    --navlink-text-color: var(--white-400);
+    --navlink-text-hover-color: var(--blue);
+    --navlink-text-active-color: var(--blue);
+    --navlink-background-color: transparent;
+    --navlink-background-hover-color: var(--blue-light-opacity);
+    --navlink-background-active-color: var(--blue-light-opacity);
+    /* Formulär */
+    --form-text-color: var(--dark-400);
+    --form-border-color: var(--white-100);
+    --form-background-color: var(--white-100);
+    --form-label-color: var(--dark-200);
+    --form-input-text-color: var(--dark-200);
+    --form-input-placeholder-color: var(--gray-600);
+    --form-input-background-color: var(--white-100);
+    --form-input-border-color: var(--gray-400);
+    --form-input-border-focus-color: var(--blue-semilight);
+    --form-error-input-text-color: var(--dark-200);
+    --form-error-input-background-color: var(--white-100);
+    --form-error-input-border-color: var(--red-semilight);
+    --form-error-input-border-focus-color: var(--blue-semilight);
+    --form-error-message-text-color: var(--red-dark);
+    --form-error-message-background-color: var(--red-light);
+    --form-error-message-border-color: var(--red-light);
+    
+    --form-search-input-text-color: var(--white-200);
+    --form-search-input-placeholder-color: var(--gray-600);
+    --form-search-input-background-color: var(--dark-100);
+    --form-search-input-border-color: var(--dark-100);
+    --form-search-input-border-focus-color: var(--blue-dark);
+    /* Aviseringar */
+    --alert-notification-error-text-color: var(--red-dark);
+    --alert-notification-error-background-color: var(--red-light);
+    /* Kort */
+    --card-text-color: var(--white-400);
+    --card-border-color: var(--dark-400);
+    --card-background-color: var(--dark-400);
+    /* profil */
+    --profile-info-background-color: var(--dark-100);
+
+    --profile-info-text-color: var(--white-100);
+}
+
+/* ============================= */
+/*         Global Reset          */
+/* ============================= */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font-standard);
+    font-style: normal;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* ============================= */
+/*           Layout              */
+/* ============================= */
+.backoffice-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "header" "main";
+    height: 100dvh;
+}
+
+@media (min-width: 1200px) {
+    .backoffice-wrapper {
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: "aside header" "aside main";
+    }
+}
+
+/* ============================= */
+/*         Header & Logotyp      */
+/* ============================= */
+.logotype {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 26px;
+    font-weight: 700;
+    font-family: var(--font-logo);
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+    .logotype:hover {
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+    .logotype span {
+        display: none;
+    }
+
+@media (min-width: 768px) {
+    .logotype span {
+        display: block;
+    }
+}
+
+.searchbar-container {
+    width: 100%;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .searchbar-container {
+        display: block;
+    }
+}
+
+header {
+    grid-area: header;
+    border-bottom: 1px solid var(--border-color);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 1.5rem;
+    min-height: 65px;
+}
+
+    /* Specifik logotyp för mobil */
+    header .logotype {
+        display: flex;
+    }
+
+@media (min-width: 768px) {
+    header {
+        grid-template-columns: auto 1fr auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        grid-template-columns: 1fr auto;
+        gap: 10rem;
+        padding: 1rem 3rem;
+    }
+
+        header .logotype {
+            display: none;
+        }
+
+        header .btn-menu {
+            display: none;
+        }
+}
+
+header .top-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* ============================= */
+/*         Huvudinnehåll         */
+/* ============================= */
+main {
+    grid-area: main;
+    padding: 1.5rem 1.5rem;
+}
+
+@media (min-width: 1200px) {
+    main {
+        padding: 1.5rem 3rem;
+    }
+}
+
+/* ============================= */
+/*         Sidomeny              */
+/* ============================= */
+aside {
+    grid-area: aside;
+    position: fixed;
+    background-color: var(--dark-400);
+    padding: 1.5rem 1.5rem;
+    opacity: 0;
+    z-index: 500;
+}
+
+@media (min-width: 1200px) {
+    aside {
+        position: static;
+        background-color: var(--background-color);
+        border-right: 1px solid var(--border-color);
+        opacity: 1;
+    }
+}
+
+/* Visar sidomenyn vid toggling på mobil */
+aside.show {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+}
+
+    aside.show .nav-link {
+        color: var(--white-100);
+    }
+
+        aside.show .nav-link:hover {
+            color: var(--blue);
+            background-color: var(--blue-light-opacity);
+        }
+
+aside .logotype {
+    display: none;
+    padding: 0.3rem;
+}
+
+aside .btn-close {
+    display: flex;
+    justify-self: flex-end;
+    color: var(--white-100);
+    font-size: 1.3em;
+}
+
+@media (min-width: 1200px) {
+    aside .logotype {
+        display: flex;
+    }
+
+    aside .btn-close {
+        display: none;
+    }
+}
+
+/* ============================= */
+/*        Hjälpklasser          */
+/* ============================= */
+.container {
+    padding: 1rem 1.5rem;
+}
+
+.border {
+    border: 1px solid red;
+}
+
+/* ============================= */
+/*           Knappar           */
+/* ============================= */
+.btn {
+    color: var(--btn-text-color);
+    border-color: var(--btn-border-color);
+    background-color: var(--btn-background-color);
+    transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 1em;
+    font-weight: var(--font-regular);
+    font-family: var(--font-standard);
+    text-decoration: none;
+    padding: 0.7rem 1.8rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    border: none;
+}
+
+    .btn:hover {
+        color: var(--btn-hover-text-color);
+        border-color: var(--btn-hover-border-color);
+        background-color: var(--btn-hover-background-color);
+    }
+
+.btn-add::before {
+    content: '\2b';
+    font-family: var(--font-fa-pro);
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.btn-close {
+    z-index: 999;
+    font-size: 1.3em;
+}
+
+.btn-menu,
+.btn-close {
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--text-color);
+    padding: 0;
+}
+
+    .btn-menu::before,
+    .btn-close::before {
+        font-family: var(--font-fa-pro);
+        font-weight: 400;
+    }
+
+    .btn-menu::before {
+        content: '\f0c9';
+        font-size: 2em;
+    }
+
+    .btn-menu.active::before {
+        content: '\f00d';
+        color: var(--white-100);
+    }
+
+    .btn-close::before {
+        content: '\f00d';
+        font-size: 1.3em;
+    }
+
+    .btn-menu:hover,
+    .btn-close:hover {
+        color: var(--text-muted-color);
+    }
+
+/* ============================= */
+/*      Navigationslänkar        */
+/* ============================= */
+.nav-links {
+    margin: 2rem 0;
+}
+
+    .nav-links > .nav-link {
+        font-size: 1em;
+        font-family: var(--font-standard);
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--navlink-text-color);
+        background-color: var(--navlink-background-color);
+        border-radius: 1rem;
+        padding: 1rem 1.5rem;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    }
+
+        .nav-links > .nav-link:hover {
+            color: var(--navlink-text-hover-color);
+            background-color: var(--navlink-background-hover-color);
+        }
+
+        .nav-links > .nav-link.active {
+            color: var(--navlink-text-active-color);
+            background-color: var(--navlink-background-active-color);
+        }
+
+/* ============================= */
+/*         Rubriker            */
+/* ============================= */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: var(--font-standard);
+    color: var(--text-headline-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1, .h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+h2, .h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h3, .h3 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+h4, .h4 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h5, .h5 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h6, .h6 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* ============================= */
+/*           Länkar            */
+/* ============================= */
+a {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: 600;
+}
+
+    a:hover {
+        color: var(--blue-semilight);
+        text-decoration: underline;
+    }
+
+/* ============================= */
+/*            Form           */
+/* ============================= */
+form {
+    width: 100%;
+    color: var(--text-color);
+    background-color: var(--form-background-color);
+    border-radius: 16px;
+}
+
+    form .form-group {
+        position: relative;
+        display: grid;
+        gap: 0.2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    form .field-group {
+        position: relative;
+    }
+
+    form .checkbox-group {
+        margin: 0.5rem 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+        form .checkbox-group label {
+            display: flex;
+            justify-items: center;
+            gap: 0.3rem;
+        }
+
+    form label {
+        color: var(--form-label-color);
+        font-size: 1em;
+        font-weight: 600;
+        font-family: var(--font-standard);
+    }
+
+    form input,
+    form select,
+    form textarea {
+        width: 100%;
+        font-size: 1em;
+        font-weight: 400;
+        font-family: var(--font-standard);
+        color: var(--form-input-text-color);
+        border: 1px solid var(--form-input-border-color);
+        background-color: var(--form-input-background-color);
+        transition: border-color 0.1s ease-in-out;
+        outline: none;
+        padding: 0.5rem 1rem;
+        border-radius: 16px;
+    }
+
+        form input:focus,
+        form select:focus,
+        form textarea:focus {
+            border: 1px solid var(--form-input-border-focus-color);
+        }
+
+        form input::placeholder,
+        form select::placeholder,
+        form textarea::placeholder {
+            color: var(--form-input-placeholder-color);
+            font-size: 0.9em;
+        }
+
+    form textarea {
+        resize: none;
+        min-height: 150px;
+    }
+
+    form input[type="checkbox"] {
+        height: 20px;
+        width: 20px;
+    }
+
+    form .search {
+        border: none;
+        background-color: var(--form-search-input-background-color);
+        border-color: var(--form-search-input-border-color);
+        color: var(--form-search-input-text-color);
+        border-radius: 0;
+    }
+
+        form .search:focus {
+            border: none;
+            background-color: var(--form-search-input-background-color);
+            color: var(--form-search-input-text-color);
+            border-bottom: 1px solid var(--form-search-input-border-focus-color);
+        }
+
+
+.input-validation-error {
+    color: var(--form-error-input-text-color);
+    border-color: var(--form-error-input-border-color);
+    background-color: var(--form-error-input-background-color);
+}
+
+.field-validation-error {
+    position: absolute;
+    z-index: 1;
+    right: 0.2rem;
+    top: 4px;
+    font-size: 0.8em;
+    padding: 0.4rem 1rem;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--form-error-message-text-color);
+    border-color: var(--form-error-message-border-color);
+    background-color: var(--form-error-message-background-color);
+}
+
+    .field-validation-error::before {
+        color: var(--red-dark);
+        content: '\f071';
+        font-family: var(--font-fa-pro);
+        font-weight: 900;
+        font-size: 1.2em;
+    }
+
+.additional-text {
+    font-weight: 600;
+    font-size: 0.95em;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.btn-submit {
+    margin-top: 2rem;
+}
+
+/* ============================= */
+/*       Sektionrubriker       */
+/* ============================= */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+    .section-header h1 {
+    }
+
+    .section-header .btn {
+        padding: 0.7rem 1rem;
+    }
+
+        .section-header .btn span {
+            display: none;
+        }
+
+@media (min-width: 768px) {
+    .section-header h1 {
+    }
+}
+
+@media (min-width: 992px) {
+    .section-header h1 {
+    }
+
+    .section-header .btn {
+        padding: 0.7rem 1.8rem;
+    }
+
+        .section-header .btn span {
+            display: block;
+        }
+}
+
+/* ============================= */
+/*           Kort              */
+/* ============================= */
+.card {
+    background-color: var(--card-background-color);
+    border: 1px solid var(--card-border-color);
+    color: var(--card-text-color);
+    margin: 2rem;
+    padding: 1.2rem 1.5rem;
+    border-radius: 16px;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+}
+
+    .card .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .card .card-body {
+        margin: 0 2rem;
+    }
+
+    .card .card-footer {
+        margin-top: 2rem;
+    }
+
+/* ============================= */
+/*           Modal             */
+/* ============================= */
+.modal {
+    background-color: var(--modal-background-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+    .modal.show {
+        display: flex;
+    }
+
+#addClientModal .card {
+    width: 550px;
+}
+
+/* ============================= */
+/*       Profilmeny            */
+/* ============================= */
+.profile-menu-container {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+}
+
+.profile-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: var(--card-background-color);
+    border: var(--card-border-color);
+    border-radius: 16px;
+    min-width: 320px;
+    box-shadow: var(--box-shadow);
+    display: none;
+    z-index: 999;
+}
+
+    .profile-dropdown.show {
+        display: block;
+    }
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--profile-info-background-color);
+    color: var(--profile-info-text-color);
+    border-radius: 14px;
+    margin: 0.5rem;
+}
+
+.profile-avatar-mini {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-weight: 600;
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--divider-color);
+    margin: 5px 0;
+}
+
+.profile-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 0.7rem;
+    margin: 0 0.7rem;
+}
+
+    .profile-action .label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+.profile-logout {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--navlink-text-color);
+    margin: 0 0.7rem;
+    margin-bottom: 0.5rem;
+    font-size: 1em;
+    font-family: var(--font-standard);
+    font-weight: 600;
+    background-color: var(--navlink-background-color);
+    border-radius: 1rem;
+    padding: 1rem 0.7rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+
+    .profile-logout:hover {
+        background: var(--navlink-background-hover-color);
+        color: var(--navlink-text-hover-color);
+        text-decoration: none;
+    }
+
+/* ============================= */
+/*   Dark Mode-toggle (exempel)  */
+/* ============================= */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+}
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+    }
+
+input:checked + .slider {
+    background-color: #2D99FF;
+}
+
+    input:checked + .slider:before {
+        transform: translateX(18px);
+    }
