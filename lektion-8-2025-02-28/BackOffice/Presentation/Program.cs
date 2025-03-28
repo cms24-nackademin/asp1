@@ -1,11 +1,12 @@
 using Microsoft.AspNetCore.Rewrite;
+using Data;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
-
-
-
+builder.Services.AddContexts(builder.Configuration.GetConnectionString("SqlConnection")!);
+builder.Services.AddLocalIdentity(builder.Configuration);
+builder.Services.AddRepositories(builder.Configuration);
 
 
 var app = builder.Build();
