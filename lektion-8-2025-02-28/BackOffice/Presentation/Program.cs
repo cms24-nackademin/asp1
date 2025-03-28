@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Rewrite;
 using Data;
+using Business;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
@@ -7,7 +8,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddContexts(builder.Configuration.GetConnectionString("SqlConnection")!);
 builder.Services.AddLocalIdentity(builder.Configuration);
 builder.Services.AddRepositories(builder.Configuration);
-
+builder.Services.AddServices(builder.Configuration);
 
 var app = builder.Build();
 app.UseHsts();

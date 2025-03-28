@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4358F5D5-A6EB-4BC7-BFA5-A05FE54C1C31}|Data\\Data.csproj|c:\\projects\\cms24\\asp-1\\lektion-8-2025-02-28\\backoffice\\data\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4358F5D5-A6EB-4BC7-BFA5-A05FE54C1C31}|Data\\Data.csproj|solutionrelative:data\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A62F87C1-5FED-4CCB-A0FB-50D4B044C7B4}|Business\\Business.csproj|c:\\projects\\cms24\\asp-1\\lektion-8-2025-02-28\\backoffice\\business\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A62F87C1-5FED-4CCB-A0FB-50D4B044C7B4}|Business\\Business.csproj|solutionrelative:business\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E922B75-8CEF-4FD8-A431-426B897F167E}|Domain\\Domain.csproj|c:\\projects\\cms24\\asp-1\\lektion-8-2025-02-28\\backoffice\\domain\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E922B75-8CEF-4FD8-A431-426B897F167E}|Domain\\Domain.csproj|solutionrelative:domain\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E922B75-8CEF-4FD8-A431-426B897F167E}|Domain\\Domain.csproj|c:\\projects\\cms24\\asp-1\\lektion-8-2025-02-28\\backoffice\\domain\\responses\\repositoryresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E922B75-8CEF-4FD8-A431-426B897F167E}|Domain\\Domain.csproj|solutionrelative:domain\\responses\\repositoryresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\Data\\Repositories\\ClientRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\ClientRepository.cs",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\Data\\Repositories\\ClientRepository.cs",
+              "RelativeToolTip": "Data\\Repositories\\ClientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T10:41:49.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\Domain\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Client.cs",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\Domain\\Models\\Client.cs",
+              "RelativeToolTip": "Domain\\Models\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T10:36:23.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RepositoryResult.cs",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\Domain\\Responses\\RepositoryResult.cs",
+              "RelativeDocumentMoniker": "Domain\\Responses\\RepositoryResult.cs",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\Domain\\Responses\\RepositoryResult.cs",
+              "RelativeToolTip": "Domain\\Responses\\RepositoryResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T10:33:11.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientService.cs",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\Business\\Services\\ClientService.cs",
+              "RelativeDocumentMoniker": "Business\\Services\\ClientService.cs",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\Business\\Services\\ClientService.cs",
+              "RelativeToolTip": "Business\\Services\\ClientService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T10:32:13.488Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
