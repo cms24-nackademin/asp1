@@ -1,5 +1,6 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+﻿# Ignorera Visual Studio-filer
+**/.vs/
 
-/lektion-6-2025-02-28/BackOffice/.vs
+# Ignorera alla bin- och obj-mappar oavsett var de ligger
+**/bin/
+**/obj/

@@ -17,6 +17,6 @@ public class ClientService(IClientRepository clientRepository)
             );
 
         var entities = repositoryResult.Result;
-        return entities;
+        return new ClientResult<IEnumerable<Client>> { Succeeded = true, StatusCode = 200, Result = entities };
     }
 }
