@@ -5,7 +5,13 @@ using Domain.Responses;
 
 namespace Business.Services;
 
-public class StatusService(IStatusRepository statusRepository)
+public interface IStatusService
+{
+    Task<StatusResult<Status>> GetStatusByIdAsync(int id);
+    Task<StatusResult<IEnumerable<Status>>> GetStatusesAsync();
+}
+
+public class StatusService(IStatusRepository statusRepository) : IStatusService
 {
     private readonly IStatusRepository _statusRepository = statusRepository;
 

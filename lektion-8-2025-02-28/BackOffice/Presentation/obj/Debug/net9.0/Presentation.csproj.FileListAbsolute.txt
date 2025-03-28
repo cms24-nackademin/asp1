@@ -176,3 +176,7 @@ C:\Projects\cms24\asp-1\lektion-8-2025-02-28\BackOffice\Presentation\bin\Debug\n
 C:\Projects\cms24\asp-1\lektion-8-2025-02-28\BackOffice\Presentation\bin\Debug\net9.0\Data.pdb
 C:\Projects\cms24\asp-1\lektion-8-2025-02-28\BackOffice\Presentation\obj\Debug\net9.0\Presentation.csproj.AssemblyReference.cache
 C:\Projects\cms24\asp-1\lektion-8-2025-02-28\BackOffice\Presentation\obj\Debug\net9.0\Presenta.BC777DBE.Up2Date
+C:\Projects\cms24\asp-1\lektion-8-2025-02-28\BackOffice\Presentation\bin\Debug\net9.0\Business.dll
+C:\Projects\cms24\asp-1\lektion-8-2025-02-28\BackOffice\Presentation\bin\Debug\net9.0\Domain.dll
+C:\Projects\cms24\asp-1\lektion-8-2025-02-28\BackOffice\Presentation\bin\Debug\net9.0\Business.pdb
+C:\Projects\cms24\asp-1\lektion-8-2025-02-28\BackOffice\Presentation\bin\Debug\net9.0\Domain.pdb

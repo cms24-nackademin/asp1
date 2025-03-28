@@ -13,3 +13,6 @@ C:\Projects\cms24\asp-1\lektion-8-2025-02-28\BackOffice\Data\obj\Debug\net9.0\re
 C:\Projects\cms24\asp-1\lektion-8-2025-02-28\BackOffice\Data\obj\Debug\net9.0\Data.pdb
 C:\Projects\cms24\asp-1\lektion-8-2025-02-28\BackOffice\Data\obj\Debug\net9.0\Data.genruntimeconfig.cache
 C:\Projects\cms24\asp-1\lektion-8-2025-02-28\BackOffice\Data\obj\Debug\net9.0\ref\Data.dll
+C:\Projects\cms24\asp-1\lektion-8-2025-02-28\BackOffice\Data\bin\Debug\net9.0\Domain.dll
+C:\Projects\cms24\asp-1\lektion-8-2025-02-28\BackOffice\Data\bin\Debug\net9.0\Domain.pdb
+C:\Projects\cms24\asp-1\lektion-8-2025-02-28\BackOffice\Data\obj\Debug\net9.0\Data.csproj.Up2Date

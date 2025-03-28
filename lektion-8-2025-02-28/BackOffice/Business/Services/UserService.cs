@@ -8,7 +8,15 @@ using Microsoft.AspNetCore.Identity;
 
 namespace Business.Services;
 
-public class UserService(IUserRepository userRepository, UserManager<UserEntity> userManager, RoleManager<IdentityRole> roleManager)
+public interface IUserService
+{
+    Task<UserResult> AddUserToRoleAsync(UserEntity user, string roleName);
+    Task<UserResult<User>> GetUserByIdAsync(string id);
+    Task<UserResult<IEnumerable<User>>> GetUsersAsync();
+    Task<UserResult> UserExistsByEmailAsync(string email);
+}
+
+public class UserService(IUserRepository userRepository, UserManager<UserEntity> userManager, RoleManager<IdentityRole> roleManager) : IUserService
 {
     private readonly IUserRepository _userRepository = userRepository;
     private readonly UserManager<UserEntity> _userManager = userManager;
@@ -40,40 +48,25 @@ public class UserService(IUserRepository userRepository, UserManager<UserEntity>
         return new UserResult<User> { Succeeded = true, StatusCode = 200, Result = user };
     }
 
-    public async Task<UserResult> CreateUserAsync(CreateUserFormData formData)
+    public async Task<UserResult> UserExistsByEmailAsync(string email)
     {
-        if (formData == null)
-            return new UserResult { Succeeded = false, StatusCode = 400, Error = "form data can't be null." };
-
-        var existsResult = await _userRepository.ExistsAsync(x => x.Email == formData.Email);
+        var existsResult = await _userRepository.ExistsAsync(x => x.Email == email);
         if (existsResult.Succeeded)
-            return new UserResult { Succeeded = false, StatusCode = 409, Error = "A user with the same email address already exists." };
-    
-        try
+            return new UserResult { Succeeded = true, StatusCode = 200, Error = "A user with the specified email address exists." };
+
+        return new UserResult { Succeeded = false, StatusCode = 404, Error = "User was not found." };
+    }
+
+    public async Task<UserResult> AddUserToRoleAsync(UserEntity user, string roleName)
+    {
+        if (await _roleManager.RoleExistsAsync(roleName))
         {
-            var userEntity = formData.MapTo<UserEntity>();
-
-            var identityResult = await _userManager.CreateAsync(userEntity, formData.Password);
-            if (identityResult.Succeeded)
-            {
-                if (formData.RoleName != null)
-                {
-                    if(await _roleManager.RoleExistsAsync(formData.RoleName))
-                    {
-                        await _userManager.AddToRoleAsync(userEntity, formData.RoleName);
-                        return new UserResult { Succeeded = true, StatusCode = 201, SuccessMessage = $"User was created successfully and added to '{formData.RoleName}'." };
-                    }
-                }
-
-                return new UserResult { Succeeded = true, StatusCode = 201, SuccessMessage = $"User was created successfully." };
-            }
-
-            throw new Exception("Unable to create user");
-
+            await _userManager.AddToRoleAsync(user, roleName);
+            return new UserResult { Succeeded = true, StatusCode = 200 };
         }
-        catch (Exception ex)
-        {
-            return new UserResult { Succeeded = false, StatusCode = 500, Error = ex.Message };
-        }
-    } 
+
+        return new UserResult { Succeeded = false };
+
+    }
+
 }
