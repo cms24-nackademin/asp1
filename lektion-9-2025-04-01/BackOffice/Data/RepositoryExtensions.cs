@@ -12,6 +12,10 @@ public static class RepositoryExtensions
         services.AddScoped<IProjectRepository, ProjectRepository>();
         services.AddScoped<IStatusRepository, StatusRepository>();
         services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<INotificationRepository, NotificationRepository>();
+        services.AddScoped<INotificationTypeRepository, NotificationTypeRepository>();
+        services.AddScoped<INotificationTargetRepository, NotificationTargetRepository>();
+        services.AddScoped<IUserDismissedNotificationRepository, UserDismissedNotificationRepository>();
 
         return services;
     }

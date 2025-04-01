@@ -11,7 +11,7 @@ public interface IBaseRepository<TEntity> where TEntity : class
     Task<RepositoryResult> AddAsync(TEntity entity);
     Task<RepositoryResult> DeleteAsync(Expression<Func<TEntity, bool>> findBy);
     Task<RepositoryResult> ExistsAsync(Expression<Func<TEntity, bool>> findBy);
-    Task<RepositoryResult<IEnumerable<TEntity>>> GetAllAsync(bool orderByDescending = false, Expression<Func<TEntity, object>>? sortByColumn = null, Expression<Func<TEntity, bool>>? filterBy = null, params Expression<Func<TEntity, object>>[] includes);
+    Task<RepositoryResult<IEnumerable<TEntity>>> GetAllAsync(bool orderByDescending = false, Expression<Func<TEntity, object>>? sortByColumn = null, Expression<Func<TEntity, bool>>? filterBy = null, int take = 0, params Expression<Func<TEntity, object>>[] includes);
     Task<RepositoryResult<TEntity>> GetAsync(Expression<Func<TEntity, bool>> findBy, params Expression<Func<TEntity, object>>[] includes);
     Task<RepositoryResult> UpdateAsync(TEntity entity);
 }
@@ -28,7 +28,7 @@ public abstract class BaseRepository<TEntity> : IBaseRepository<TEntity> where T
     }
 
 
-    public virtual async Task<RepositoryResult<IEnumerable<TEntity>>> GetAllAsync(bool orderByDescending = false, Expression<Func<TEntity, object>>? sortByColumn = null, Expression<Func<TEntity, bool>>? filterBy = null, params Expression<Func<TEntity, object>>[] includes)
+    public virtual async Task<RepositoryResult<IEnumerable<TEntity>>> GetAllAsync(bool orderByDescending = false, Expression<Func<TEntity, object>>? sortByColumn = null, Expression<Func<TEntity, bool>>? filterBy = null, int take = 0, params Expression<Func<TEntity, object>>[] includes)
     {
         IQueryable<TEntity> query = _table;
 
@@ -43,6 +43,9 @@ public abstract class BaseRepository<TEntity> : IBaseRepository<TEntity> where T
             query = orderByDescending
                 ? query.OrderByDescending(sortByColumn)
                 : query.OrderBy(sortByColumn);
+
+        if (take > 0)
+            query = query.Take(take);
 
         var entities = await query.ToListAsync();
         return new RepositoryResult<IEnumerable<TEntity>> { Succeeded = true, StatusCode = 200, Result = entities };

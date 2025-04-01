@@ -1,0 +1,60 @@
+﻿using Business.Models;
+using Data.Entitites;
+using Data.Repositories;
+using Domain.Extensions;
+using Domain.Models;
+using Domain.Responses;
+
+namespace Business.Services;
+
+public class NotificationService(INotificationRepository notificationRepository, INotificationTypeRepository notificationTypeRepository, INotificationTargetRepository notificationTargetRepository, IUserDismissedNotificationRepository userDismissedNotificationRepository)
+{
+    private readonly INotificationRepository _notificationRepository = notificationRepository;
+    private readonly INotificationTypeRepository _notificationTypeRepository = notificationTypeRepository;
+    private readonly INotificationTargetRepository _notificationTargetRepository = notificationTargetRepository;
+    private readonly IUserDismissedNotificationRepository _userDismissedNotificationRepository = userDismissedNotificationRepository;
+
+    public async Task<NotificationResult> AddNotificationAsync(NotificationFormData formData)
+    {
+        if (formData == null)
+            return new NotificationResult { Succeeded = false, StatusCode = 400 };
+
+        if (string.IsNullOrEmpty(formData.Image))
+        {
+            switch (formData.NotificationTypeId)
+            {
+                case 1:
+                    formData.Image = "/images/profiles/user-template.svg";
+                    break;
+
+                case 2:
+                    formData.Image = "/images/projects/project-template.svg";
+                    break;
+            }
+        }
+
+        var notificationEntity = formData.MapTo<NotificationEntity>();
+        var result = await _notificationRepository.AddAsync(notificationEntity);
+
+        return result.Succeeded
+            ? new NotificationResult { Succeeded = true, StatusCode = 200 }
+            : new NotificationResult { Succeeded = false, StatusCode = result.StatusCode, Error = result.Error };
+    }
+
+
+    public async Task<NotificationResult<IEnumerable<Notification>>> GetNotificationsAsync(string userId, int take = 10)
+    {
+        var dismissedIds = await _userDismissedNotificationRepository.GetNoticationsIdsAsync(userId);
+
+        var entities = await _notificationRepository.GetAllAsync
+        (
+            orderByDescending: true,
+            sortByColumn: x => x.CreateDate,
+            filterBy: x => !dismissedIds.Result!.Contains(x.Id),
+            take: take
+        );
+
+        var notifications = entities.Result!.Select(entity => entity.MapTo<Notification>());
+        return new NotificationResult<IEnumerable<Notification>> { Succeeded = true, StatusCode = 200, Result = notifications };
+    }
+}
