@@ -111,11 +111,20 @@
     --card-background-color: var(--white-100);
     /* account */
     --account-info-background-color: var(--white-200);
-    --account-info-text-color var(--dark-400);
-    --account-option-text-color var(--dark-200);
+    --account-info-text-color: var(--dark-400);
+    --account-option-text-color: var(--dark-200);
     --account-option-background-color: transparent;
     --account-option-background-hover-color: var(--blue-light-opacity);
     --account-option-text-hover-color: var(--blue);
+    /* notification */
+    --notification-text-color: var(--dark-400);
+    --notification-background-color: transparent;
+    --notification-background-hover-color: var(--blue-light-opacity);
+    --notification-active-background-color: var(--blue-light-opacity);
+    /* dots */
+    --dot-red-background-color: var(--red);
+    --dot-yellow-background-color: var(--yellow);
+    --dot-green-background-color: var(--green);
 }
 
 [data-mode="dark"] {
@@ -394,6 +403,40 @@ aside .btn-close {
 }
 
 /* ============================= */
+/*           dots                */
+/* ============================= */
+.dot {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: var(--background-color);
+}
+
+    .dot::after {
+        position: absolute;
+        content: '\f111';
+        font-family: var(--font-fa-pro);
+        font-size: 0.5em;
+        left: calc(50% - 0.5em);
+        top: calc(50% - 0.5em);
+        border: none;
+    }
+
+
+    .dot.dot-red {
+        color: var(--dot-red-background-color);
+    }
+
+    .dot.dot-yellow {
+        color: var(--dot-yellow-background-color);
+    }
+
+    .dot.dot-green {
+        color: var(--dot-green-background-color);
+    }
+
+/* ============================= */
 /*           Knappar           */
 /* ============================= */
 .btn {
@@ -467,6 +510,40 @@ aside .btn-close {
     .btn-close:hover {
         color: var(--text-muted-color);
     }
+
+
+.btn-notification {
+    position: relative;
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    background-color: var(--notification-background-color);
+    color: var(--notification-text-color);
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 14px;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+    .btn-notification:hover,
+    .btn-notification.active {
+        background-color: var(--notification-background-hover-color);
+    }
+
+    .btn-notification .dot {
+        right: 14px;
+        top: 10px;
+    }
+
+
+
+
+
+
 
 /* ============================= */
 /*      Navigationslänkar        */
@@ -964,3 +1041,120 @@ input:checked + .slider {
         color: var(--account-option-text-hover-color);
         text-decoration: none;
     }
+
+
+
+.notification-dropdown-container {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+}
+
+    .notification-dropdown-container .btn-notification {
+        position: relative;
+        border: none;
+        transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    }
+
+        .notification-dropdown-container .btn-notification:hover {
+            background-color: var(--gray-100) !important;
+            border: 0px solid var(--gray-100);
+            color: var(--text-color);
+            transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+        }
+
+    .notification-dropdown-container .notification-dropdown {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background: var(--card-background-color);
+        border: var(--card-border-color);
+        border-radius: 16px;
+        min-width: 450px;
+        min-height: 150px;
+        box-shadow: var(--box-shadow);
+        display: none;
+        z-index: 999;
+    }
+
+        .notification-dropdown-container .notification-dropdown.show {
+            display: block;
+        }
+
+        .notification-dropdown-container .notification-dropdown .notification-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            color: var(--profile-info-text-color);
+            border-radius: 14px;
+            margin: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .notification-dropdown-container .notification-dropdown .notification-number {
+            background: #FF6640;
+            color: var(--white-100);
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.9em;
+        }
+
+
+.notification-item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "img message btn" "img time btn";
+    align-items: center;
+    column-gap: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 14px;
+    transition: background-color 0.1s ease-in-out;
+}
+
+    .notification-item .image {
+        grid-area: img;
+        height: 48px;
+        width: 48px;
+    }
+
+        .notification-item .image.user {
+            border-radius: 50%;
+        }
+
+        .notification-item .image.project {
+            border-radius: 14px;
+        }
+
+    .notification-item .message {
+        grid-area: message;
+    }
+
+    .notification-item .time {
+        grid-area: time;
+        font-size: 0.9em;
+        color: var(--text-extra-muted-color);
+    }
+
+    .notification-item .btn-close {
+        grid-area: btn;
+        opacity: 0;
+        transition: opacity 0.1s ease-in-out;
+        pointer-events: none;
+    }
+
+    .notification-item:hover {
+        background-color: var(--white-200);
+    }
+
+        .notification-item:hover .btn-close {
+            opacity: 1;
+            pointer-events: auto;
+        }
