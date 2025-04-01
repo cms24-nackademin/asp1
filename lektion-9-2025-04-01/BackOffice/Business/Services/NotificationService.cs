@@ -14,8 +14,6 @@ public class NotificationService(INotificationRepository notificationRepository,
     private readonly INotificationTypeRepository _notificationTypeRepository = notificationTypeRepository;
     private readonly INotificationTargetRepository _notificationTargetRepository = notificationTargetRepository;
     private readonly IUserDismissedNotificationRepository _userDismissedNotificationRepository = userDismissedNotificationRepository;
-    private readonly UserManager<UserEntity> _userManager;
-    private readonly RoleManager<IdentityRole> _roleManager;
 
 
     public async Task<NotificationResult> AddNotificationAsync(NotificationFormData formData)
@@ -46,7 +44,7 @@ public class NotificationService(INotificationRepository notificationRepository,
     }
 
 
-    public async Task<NotificationResult<IEnumerable<Notification>>> GetNotificationsAsync(string userId, string roleName = null!, int take = 10)
+    public async Task<NotificationResult<IEnumerable<Notification>>> GetNotificationsAsync(string userId, string? roleName = null, int take = 10)
     {
         var adminTargetName = "Admin";
         var dismissedNotificationResult = await _userDismissedNotificationRepository.GetNoticationsIdsAsync(userId);
@@ -57,7 +55,8 @@ public class NotificationService(INotificationRepository notificationRepository,
                 filterBy: x => !dismissedNotificationIds!.Contains(x.Id), take: take)
 
             : await _notificationRepository.GetAllAsync(orderByDescending: true, sortByColumn: x => x.CreateDate, 
-                filterBy: x => !dismissedNotificationIds!.Contains(x.Id) && x.NotificationTarget.TargetName != adminTargetName, take: take, includes: x => x.NotificationTarget);
+                filterBy: x => !dismissedNotificationIds!.Contains(x.Id) && x.NotificationTarget.TargetName != adminTargetName, take: take, 
+                includes: x => x.NotificationTarget);
 
         if (!notificationResult.Succeeded)
             return new NotificationResult<IEnumerable<Notification>> { Succeeded = false, StatusCode = 404 };
