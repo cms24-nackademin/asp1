@@ -120,7 +120,7 @@ function updateRelativeTimes() {
         let relativeTime = '';
 
         if (diffMinutes < 1) {
-            relativeTime = '0 min ago';
+            relativeTime = 'Just now';
         } else if (diffMinutes < 60) {
             relativeTime = diffMinutes + ' min ago';
         } else if (diffHours < 2) {

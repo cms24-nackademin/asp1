@@ -4,6 +4,8 @@ using Data.Repositories;
 using Domain.Extensions;
 using Domain.Models;
 using Domain.Responses;
+using Hubs;
+using Microsoft.AspNetCore.SignalR;
 
 
 namespace Business.Services;
@@ -11,15 +13,17 @@ namespace Business.Services;
 public interface INotificationService
 {
     Task<NotificationResult> AddNotificationAsync(NotificationFormData formData);
+    Task DismissNotificationAsync(string notificationId, string userId);
     Task<NotificationResult<IEnumerable<Notification>>> GetNotificationsAsync(string userId, string? roleName = null, int take = 10);
 }
 
-public class NotificationService(INotificationRepository notificationRepository, INotificationTypeRepository notificationTypeRepository, INotificationTargetRepository notificationTargetRepository, IUserDismissedNotificationRepository userDismissedNotificationRepository) : INotificationService
+public class NotificationService(INotificationRepository notificationRepository, INotificationTypeRepository notificationTypeRepository, INotificationTargetRepository notificationTargetRepository, IUserDismissedNotificationRepository userDismissedNotificationRepository, IHubContext<NotificationHub> notificationHub) : INotificationService
 {
     private readonly INotificationRepository _notificationRepository = notificationRepository;
     private readonly INotificationTypeRepository _notificationTypeRepository = notificationTypeRepository;
     private readonly INotificationTargetRepository _notificationTargetRepository = notificationTargetRepository;
     private readonly IUserDismissedNotificationRepository _userDismissedNotificationRepository = userDismissedNotificationRepository;
+    private readonly IHubContext<NotificationHub> _notificationHub =  notificationHub;
 
 
     public async Task<NotificationResult> AddNotificationAsync(NotificationFormData formData)
@@ -43,6 +47,13 @@ public class NotificationService(INotificationRepository notificationRepository,
 
         var notificationEntity = formData.MapTo<NotificationEntity>();
         var result = await _notificationRepository.AddAsync(notificationEntity);
+
+        if (result.Succeeded)
+        {
+            var notificationResult = await _notificationRepository.GetLatestNotification();
+            await _notificationHub.Clients.All.SendAsync("ReceiveNotification", notificationResult.Result);
+        }
+
 
         return result.Succeeded
             ? new NotificationResult { Succeeded = true, StatusCode = 200 }
@@ -69,5 +80,22 @@ public class NotificationService(INotificationRepository notificationRepository,
 
         var notifications = notificationResult.Result!.Select(entity => entity.MapTo<Notification>());
         return new NotificationResult<IEnumerable<Notification>> { Succeeded = true, StatusCode = 200, Result = notifications };
+    }
+
+
+    public async Task DismissNotificationAsync(string notificationId, string userId)
+    {
+        var exists = await _userDismissedNotificationRepository.ExistsAsync(x => x.NotificationId == notificationId && x.UserId == userId);
+        if (!exists.Succeeded)
+        {
+            var entity = new UserDismissedNotificationEntity
+            {
+                NotificationId = notificationId,
+                UserId = userId
+            };
+
+            await _userDismissedNotificationRepository.AddAsync(entity);
+            await _notificationHub.Clients.User(userId).SendAsync("NotificationDismissed", notificationId);
+        }
     }
 }

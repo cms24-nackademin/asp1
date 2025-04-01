@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Rewrite;
 using Data;
 using Business;
+using Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
+builder.Services.AddSignalR();
 
 builder.Services.AddContexts(builder.Configuration.GetConnectionString("SqlConnection")!);
 builder.Services.AddLocalIdentity(builder.Configuration);
@@ -27,5 +29,6 @@ app.MapControllerRoute(
     pattern: "{controller=Overview}/{action=Index}/{id?}")
     .WithStaticAssets();
 
+app.MapHub<NotificationHub>("/notificationHub");
 
 app.Run();
