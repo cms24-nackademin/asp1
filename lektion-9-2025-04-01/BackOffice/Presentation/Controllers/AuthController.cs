@@ -3,13 +3,16 @@ using Business.Services;
 using Domain.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Presentation.Models;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace Presentation.Controllers;
 
-public class AuthController(IAuthService authService) : Controller
+public class AuthController(IAuthService authService, INotificationService notificationService, IUserService userService) : Controller
 {
     private readonly IAuthService _authService = authService;
+    private readonly INotificationService _notificationService = notificationService;
+    private readonly IUserService _userService = userService;
 
 
     [Route("auth/signup")]
@@ -61,11 +64,28 @@ public class AuthController(IAuthService authService) : Controller
     {
         if (ModelState.IsValid)
         {
-            var signInFormData = model.MapTo<SignInFormData>(); 
+            var signInFormData = model.MapTo<SignInFormData>();
             var authResult = await _authService.SignInAsync(signInFormData);
 
             if (authResult.Succeeded)
             {
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                var userResult = await _userService.GetUserByIdAsync(userId!);
+                var user = userResult.Result;
+                
+                if (user != null)
+                {
+                    var notificationFormData = new NotificationFormData
+                    {
+                        NotificationTypeId = 1,
+                        NotificationTargetId = 1,
+                        Message = $"{user.FirstName} {user.LastName} signed in.",
+                        Image = user.Image
+                    };
+
+                    await _notificationService.AddNotificationAsync(notificationFormData);
+                }
+
                 return LocalRedirect(returnUrl);
             }
         }

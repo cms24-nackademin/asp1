@@ -1,22 +1,35 @@
-﻿<div class="notification-dropdown-container">
+﻿@{
+    var userId = User.FindFirstValue(ClaimTypes.NameIdentifier) ?? "";
+    var roleName = User.FindFirstValue(ClaimTypes.Role) ?? "";
+    var notificationResult = await notificationService.GetNotificationsAsync(userId, roleName);
+    var notifications = notificationResult.Result;
+}
+
+<div class="notification-dropdown-container">
     <button data-type="dropdown" data-target="#notification-dropdown" class="btn-notification fa-duotone fa-solid fa-bell" style="--fa-primary-opacity: 0.4; --fa-secondary-opacity: 1;">
-        <div class="dot dot-red"></div>
+        @if (notifications.Any())
+        {
+            <div class="dot dot-red"></div>
+        }
     </button>
 
     <div id="notification-dropdown" class="notification-dropdown">
         <div class="notification-header">
             <h4>Notifications</h4>
-            <span class="notification-number">0</span>
+            <span class="notification-number">@notifications.Count()</span>
         </div>
         <div class="dropdown-divider"></div>
         <div class="notifications">
-            
-            <div class="notification-item" data-id="">
-                <img class="image" src="~/images/projects/project-template.svg" />
-                <div class="message">Hasse was here</div>
-                <div class="time" data-create="">1 day ago</div>
-                <button class="btn-close" onclick=""></button>
+
+            @foreach (var notification in notifications)
+            {
+            <div class="notification-item" data-id="@notification.Id">
+                <img class="image" src="@notification.Image" />
+                <div class="message">@notification.Message</div>
+                <div class="time" data-created="@notification.CreateDate.ToString("s")">@notification.CreateDate</div>
+                <button class="btn-close" onclick="dismissNotification('@notification.Id')"></button>
             </div>
+            }
 
         </div>
     </div>

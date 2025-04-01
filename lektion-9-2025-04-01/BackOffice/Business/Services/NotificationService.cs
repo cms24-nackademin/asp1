@@ -4,11 +4,17 @@ using Data.Repositories;
 using Domain.Extensions;
 using Domain.Models;
 using Domain.Responses;
-using Microsoft.AspNetCore.Identity;
+
 
 namespace Business.Services;
 
-public class NotificationService(INotificationRepository notificationRepository, INotificationTypeRepository notificationTypeRepository, INotificationTargetRepository notificationTargetRepository, IUserDismissedNotificationRepository userDismissedNotificationRepository)
+public interface INotificationService
+{
+    Task<NotificationResult> AddNotificationAsync(NotificationFormData formData);
+    Task<NotificationResult<IEnumerable<Notification>>> GetNotificationsAsync(string userId, string? roleName = null, int take = 10);
+}
+
+public class NotificationService(INotificationRepository notificationRepository, INotificationTypeRepository notificationTypeRepository, INotificationTargetRepository notificationTargetRepository, IUserDismissedNotificationRepository userDismissedNotificationRepository) : INotificationService
 {
     private readonly INotificationRepository _notificationRepository = notificationRepository;
     private readonly INotificationTypeRepository _notificationTypeRepository = notificationTypeRepository;
@@ -51,11 +57,11 @@ public class NotificationService(INotificationRepository notificationRepository,
         var dismissedNotificationIds = dismissedNotificationResult.Result;
 
         var notificationResult = (!string.IsNullOrEmpty(roleName) && roleName == adminTargetName)
-            ? await _notificationRepository.GetAllAsync(orderByDescending: true, sortByColumn: x => x.CreateDate, 
+            ? await _notificationRepository.GetAllAsync(orderByDescending: true, sortByColumn: x => x.CreateDate,
                 filterBy: x => !dismissedNotificationIds!.Contains(x.Id), take: take)
 
-            : await _notificationRepository.GetAllAsync(orderByDescending: true, sortByColumn: x => x.CreateDate, 
-                filterBy: x => !dismissedNotificationIds!.Contains(x.Id) && x.NotificationTarget.TargetName != adminTargetName, take: take, 
+            : await _notificationRepository.GetAllAsync(orderByDescending: true, sortByColumn: x => x.CreateDate,
+                filterBy: x => !dismissedNotificationIds!.Contains(x.Id) && x.NotificationTarget.TargetName != adminTargetName, take: take,
                 includes: x => x.NotificationTarget);
 
         if (!notificationResult.Succeeded)

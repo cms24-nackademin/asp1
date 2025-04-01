@@ -12,6 +12,7 @@ public static class ServiceExtensions
         services.AddScoped<IClientService, ClientService>();
         services.AddScoped<IStatusService, StatusService>();
         services.AddScoped<IAuthService, AuthService>();
+        services.AddScoped<INotificationService, NotificationService>();
 
         return services;
     }
