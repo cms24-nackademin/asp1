@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BC1B8C9D-31F1-4020-8DB6-97E2200DB0C6}|Presentation\\Presentation.csproj|c:\\projects\\cms24\\asp-1\\lektion-8-2025-02-28\\backoffice\\presentation\\wwwroot\\js\\darkmode.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BC1B8C9D-31F1-4020-8DB6-97E2200DB0C6}|Presentation\\Presentation.csproj|solutionrelative:presentation\\wwwroot\\js\\darkmode.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1B8C9D-31F1-4020-8DB6-97E2200DB0C6}|Presentation\\Presentation.csproj|c:\\projects\\cms24\\asp-1\\lektion-8-2025-02-28\\backoffice\\presentation\\views\\shared\\_backoffice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC1B8C9D-31F1-4020-8DB6-97E2200DB0C6}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\shared\\_backoffice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A62F87C1-5FED-4CCB-A0FB-50D4B044C7B4}|Business\\Business.csproj|c:\\projects\\cms24\\asp-1\\lektion-8-2025-02-28\\backoffice\\business\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A62F87C1-5FED-4CCB-A0FB-50D4B044C7B4}|Business\\Business.csproj|solutionrelative:business\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC1B8C9D-31F1-4020-8DB6-97E2200DB0C6}|Presentation\\Presentation.csproj|c:\\projects\\cms24\\asp-1\\lektion-8-2025-02-28\\backoffice\\presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC1B8C9D-31F1-4020-8DB6-97E2200DB0C6}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/cms24_sqlserver.database.windows.net/database/EducationAccount/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
@@ -26,10 +38,6 @@
       "RelativeMoniker": "D:0:0:{BC1B8C9D-31F1-4020-8DB6-97E2200DB0C6}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\overviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC1B8C9D-31F1-4020-8DB6-97E2200DB0C6}|Presentation\\Presentation.csproj|c:\\projects\\cms24\\asp-1\\lektion-8-2025-02-28\\backoffice\\presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC1B8C9D-31F1-4020-8DB6-97E2200DB0C6}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BC1B8C9D-31F1-4020-8DB6-97E2200DB0C6}|Presentation\\Presentation.csproj|c:\\projects\\cms24\\asp-1\\lektion-8-2025-02-28\\backoffice\\presentation\\models\\signupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC1B8C9D-31F1-4020-8DB6-97E2200DB0C6}|Presentation\\Presentation.csproj|solutionrelative:presentation\\models\\signupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -46,19 +54,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "darkmode.js",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\Presentation\\wwwroot\\js\\darkmode.js",
+              "RelativeDocumentMoniker": "Presentation\\wwwroot\\js\\darkmode.js",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\Presentation\\wwwroot\\js\\darkmode.js",
+              "RelativeToolTip": "Presentation\\wwwroot\\js\\darkmode.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-28T14:17:41.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_BackOffice.cshtml",
+              "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\Presentation\\Views\\Shared\\_BackOffice.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Shared\\_BackOffice.cshtml",
+              "ToolTip": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\Presentation\\Views\\Shared\\_BackOffice.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Shared\\_BackOffice.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-28T14:17:18.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\Business\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Business\\Services\\AuthService.cs",
               "ToolTip": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\Business\\Services\\AuthService.cs",
               "RelativeToolTip": "Business\\Services\\AuthService.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAkwCQAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwCAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-28T14:09:47.102Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "dbo.AspNetUsers [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/cms24_sqlserver.database.windows.net/database/EducationAccount/SqlTable/dbo.AspNetUsers.sql",
               "ToolTip": "dbo.AspNetUsers [Data]",
@@ -68,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ClientsController.cs",
               "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\Presentation\\Controllers\\ClientsController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\ClientsController.cs",
@@ -81,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\Presentation\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\UsersController.cs",
@@ -94,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "ProjectsController.cs",
               "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\Presentation\\Controllers\\ProjectsController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\ProjectsController.cs",
@@ -107,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "OverviewController.cs",
               "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\Presentation\\Controllers\\OverviewController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\OverviewController.cs",
@@ -120,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "SignUpViewModel.cs",
               "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\Presentation\\Models\\SignUpViewModel.cs",
               "RelativeDocumentMoniker": "Presentation\\Models\\SignUpViewModel.cs",
@@ -133,13 +167,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\Presentation\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Projects\\cms24\\asp-1\\lektion-8-2025-02-28\\BackOffice\\Presentation\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Presentation\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAgwEYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAkwE4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-28T13:59:19.002Z",
               "EditorCaption": ""

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <partial name="_Title" />
+    <script type="importmap"></script>
+    <script src="~/js/darkmode.js" asp-append-version="true"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a576612222.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+
+    <div class="backoffice-wrapper">
+        <aside id="sidebar">
+            <button type="button" data-type="close" data-target="#sidebar" class="btn-close"></button>
+            <partial name="Partials/_Logotype" />
+            <partial name="Partials/_NavLinks" />
+        </aside>
+        <header>
+            <partial name="Partials/_Logotype" />
+
+            <partial name="Partials/_Searchbar" />
+
+            <partial name="Partials/_TopMenu" />
+        </header>
+        <main>
+            @RenderBody()
+        </main>
+    </div>
+            
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
