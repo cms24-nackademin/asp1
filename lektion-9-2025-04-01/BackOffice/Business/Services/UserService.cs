@@ -11,6 +11,7 @@ namespace Business.Services;
 public interface IUserService
 {
     Task<UserResult> AddUserToRoleAsync(UserEntity user, string roleName);
+    Task<string> GetDisplayName(string userId);
     Task<UserResult<User>> GetUserByIdAsync(string id);
     Task<UserResult<IEnumerable<User>>> GetUsersAsync();
     Task<UserResult> UserExistsByEmailAsync(string email);
@@ -47,7 +48,6 @@ public class UserService(IUserRepository userRepository, UserManager<UserEntity>
         var user = entity.MapTo<User>();
         return new UserResult<User> { Succeeded = true, StatusCode = 200, Result = user };
     }
-
     public async Task<UserResult> UserExistsByEmailAsync(string email)
     {
         var existsResult = await _userRepository.ExistsAsync(x => x.Email == email);
@@ -56,7 +56,6 @@ public class UserService(IUserRepository userRepository, UserManager<UserEntity>
 
         return new UserResult { Succeeded = false, StatusCode = 404, Error = "User was not found." };
     }
-
     public async Task<UserResult> AddUserToRoleAsync(UserEntity user, string roleName)
     {
         if (await _roleManager.RoleExistsAsync(roleName))
@@ -69,4 +68,12 @@ public class UserService(IUserRepository userRepository, UserManager<UserEntity>
 
     }
 
+    public async Task<string> GetDisplayName(string userId)
+    {
+        if (string.IsNullOrEmpty(userId))
+            return "";
+
+        var user = await _userManager.FindByIdAsync(userId);
+        return user == null ? "" : $"{user.FirstName} {user.LastName}";
+    }
 }

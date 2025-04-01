@@ -109,9 +109,13 @@
     --card-text-color: var(--dark-400);
     --card-border-color: var(--white-100);
     --card-background-color: var(--white-100);
-    /* profile */
-    --profile-info-background-color: var(--white-200);
-    --profile-info-text-color: var(--dark-400);
+    /* account */
+    --account-info-background-color: var(--white-200);
+    --account-info-text-color var(--dark-400);
+    --account-option-text-color var(--dark-200);
+    --account-option-background-color: transparent;
+    --account-option-background-hover-color: var(--blue-light-opacity);
+    --account-option-text-hover-color: var(--blue);
 }
 
 [data-mode="dark"] {
@@ -813,108 +817,6 @@ form {
 }
 
 /* ============================= */
-/*       Profilmeny            */
-/* ============================= */
-.profile-menu-container {
-    position: relative;
-    display: inline-block;
-    z-index: 0;
-}
-
-.profile-avatar {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.profile-dropdown {
-    position: absolute;
-    top: 50px;
-    right: 0;
-    background: var(--card-background-color);
-    border: var(--card-border-color);
-    border-radius: 16px;
-    min-width: 320px;
-    box-shadow: var(--box-shadow);
-    display: none;
-    z-index: 999;
-}
-
-    .profile-dropdown.show {
-        display: block;
-    }
-
-.profile-info {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    background-color: var(--profile-info-background-color);
-    color: var(--profile-info-text-color);
-    border-radius: 14px;
-    margin: 0.5rem;
-}
-
-.profile-avatar-mini {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-}
-
-.profile-name {
-    font-weight: 600;
-}
-
-.divider {
-    height: 1px;
-    background-color: var(--divider-color);
-    margin: 5px 0;
-}
-
-.profile-action {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 1rem 0.7rem;
-    margin: 0 0.7rem;
-}
-
-    .profile-action .label {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1rem;
-    }
-
-.profile-logout {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: var(--navlink-text-color);
-    margin: 0 0.7rem;
-    margin-bottom: 0.5rem;
-    font-size: 1em;
-    font-family: var(--font-standard);
-    font-weight: 600;
-    background-color: var(--navlink-background-color);
-    border-radius: 1rem;
-    padding: 1rem 0.7rem;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
-}
-
-    .profile-logout:hover {
-        background: var(--navlink-background-hover-color);
-        color: var(--navlink-text-hover-color);
-        text-decoration: none;
-    }
-
-/* ============================= */
 /*   Dark Mode-toggle (exempel)  */
 /* ============================= */
 .switch {
@@ -960,4 +862,105 @@ input:checked + .slider {
 
     input:checked + .slider:before {
         transform: translateX(18px);
+    }
+
+
+.dropdown-divider {
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 5px 0;
+}
+
+
+.account-dropdown-container {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+}
+
+.account-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.account-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: var(--card-background-color);
+    border: var(--card-border-color);
+    border-radius: 16px;
+    min-width: 320px;
+    box-shadow: var(--box-shadow);
+    display: none;
+    z-index: 999;
+}
+
+    .account-dropdown.show {
+        display: block;
+    }
+
+.account-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--account-info-background-color);
+    color: var(--account-info-text-color);
+    border-radius: 14px;
+    margin: 0.5rem;
+}
+
+.account-avatar-mini {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.account-name {
+    font-weight: 600;
+}
+
+.account-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 0.7rem;
+    margin: 0 0.7rem;
+}
+
+    .account-action .label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+.account-signout {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--account-option-text-color);
+    margin: 0 0.7rem;
+    margin-bottom: 0.5rem;
+    font-size: 1em;
+    font-family: var(--font-standard);
+    font-weight: 600;
+    background-color: var(--account-option-background-color);
+    border-radius: 1rem;
+    padding: 1rem 0.7rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+
+    .account-signout:hover {
+        background: var(--account-option-background-hover-color);
+        color: var(--account-option-text-hover-color);
+        text-decoration: none;
     }
