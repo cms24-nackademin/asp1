@@ -47,7 +47,7 @@ public class NotificationService(INotificationRepository notificationRepository,
     public async Task<NotificationResult<IEnumerable<Notification>>> GetNotificationsAsync(string userId, string? roleName = null, int take = 10)
     {
         var adminTargetName = "Admin";
-        var dismissedNotificationResult = await _userDismissedNotificationRepository.GetNoticationsIdsAsync(userId);
+        var dismissedNotificationResult = await _userDismissedNotificationRepository.GetNotificationsIdsAsync(userId);
         var dismissedNotificationIds = dismissedNotificationResult.Result;
 
         var notificationResult = (!string.IsNullOrEmpty(roleName) && roleName == adminTargetName)
