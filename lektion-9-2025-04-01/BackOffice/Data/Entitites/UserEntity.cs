@@ -17,4 +17,6 @@ public class UserEntity : IdentityUser
     public string? JobTitle { get; set; }
 
     public virtual ICollection<ProjectEntity> Projects { get; set; } = [];
+
+    public virtual ICollection<UserDismissedNotificationEntity> DismissedNotifications { get; set; } = [];
 }
