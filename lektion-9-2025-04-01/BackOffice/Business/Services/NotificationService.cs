@@ -4,6 +4,7 @@ using Data.Repositories;
 using Domain.Extensions;
 using Domain.Models;
 using Domain.Responses;
+using Microsoft.AspNetCore.Identity;
 
 namespace Business.Services;
 
@@ -13,6 +14,9 @@ public class NotificationService(INotificationRepository notificationRepository,
     private readonly INotificationTypeRepository _notificationTypeRepository = notificationTypeRepository;
     private readonly INotificationTargetRepository _notificationTargetRepository = notificationTargetRepository;
     private readonly IUserDismissedNotificationRepository _userDismissedNotificationRepository = userDismissedNotificationRepository;
+    private readonly UserManager<UserEntity> _userManager;
+    private readonly RoleManager<IdentityRole> _roleManager;
+
 
     public async Task<NotificationResult> AddNotificationAsync(NotificationFormData formData)
     {
@@ -42,19 +46,23 @@ public class NotificationService(INotificationRepository notificationRepository,
     }
 
 
-    public async Task<NotificationResult<IEnumerable<Notification>>> GetNotificationsAsync(string userId, int take = 10)
+    public async Task<NotificationResult<IEnumerable<Notification>>> GetNotificationsAsync(string userId, string roleName = null!, int take = 10)
     {
-        var dismissedIds = await _userDismissedNotificationRepository.GetNoticationsIdsAsync(userId);
+        var adminTargetName = "Admin";
+        var dismissedNotificationResult = await _userDismissedNotificationRepository.GetNoticationsIdsAsync(userId);
+        var dismissedNotificationIds = dismissedNotificationResult.Result;
 
-        var entities = await _notificationRepository.GetAllAsync
-        (
-            orderByDescending: true,
-            sortByColumn: x => x.CreateDate,
-            filterBy: x => !dismissedIds.Result!.Contains(x.Id),
-            take: take
-        );
+        var notificationResult = (!string.IsNullOrEmpty(roleName) && roleName == adminTargetName)
+            ? await _notificationRepository.GetAllAsync(orderByDescending: true, sortByColumn: x => x.CreateDate, 
+                filterBy: x => !dismissedNotificationIds!.Contains(x.Id), take: take)
 
-        var notifications = entities.Result!.Select(entity => entity.MapTo<Notification>());
+            : await _notificationRepository.GetAllAsync(orderByDescending: true, sortByColumn: x => x.CreateDate, 
+                filterBy: x => !dismissedNotificationIds!.Contains(x.Id) && x.NotificationTarget.TargetName != adminTargetName, take: take, includes: x => x.NotificationTarget);
+
+        if (!notificationResult.Succeeded)
+            return new NotificationResult<IEnumerable<Notification>> { Succeeded = false, StatusCode = 404 };
+
+        var notifications = notificationResult.Result!.Select(entity => entity.MapTo<Notification>());
         return new NotificationResult<IEnumerable<Notification>> { Succeeded = true, StatusCode = 200, Result = notifications };
     }
 }
