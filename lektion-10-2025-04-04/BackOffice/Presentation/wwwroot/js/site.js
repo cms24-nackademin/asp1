@@ -133,3 +133,4 @@ function updateRelativeTimes() {
         el.textContent = relativeTime;
     });
 }
+

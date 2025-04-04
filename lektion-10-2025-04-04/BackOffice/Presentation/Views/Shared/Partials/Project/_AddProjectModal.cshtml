@@ -1,4 +1,6 @@
-﻿<div id="addProjectModal" class="modal">
+﻿@model AddProjectViewModel
+
+<div id="addProjectModal" class="modal">
     <div class="card">
         <div class="card-header">
             <h3>Add Project</h3>
@@ -6,6 +8,34 @@
         </div>
         <div class="card-body">
             <form asp-controller="Project" asp-action="Add" method="post" enctype="multipart/form-data" novalidate>
+
+                <div class="form-group">
+                    <label asp-for="Description"></label>
+                    <div class="wysiwyg-container">
+                        <textarea asp-for="Description"></textarea>
+                        <div id="add-project-description-editor" class="wysiwyg-editor"></div>
+                        <div id="add-project-description-toolbar" class="wysiwyg-toolbar">
+                            <span class="ql-formats">
+                                <button class="ql-bold"></button>
+                                <button class="ql-italic"></button>
+                                <button class="ql-underline"></button>
+                            </span>
+                            <span class="ql-formats">
+                                <button class="ql-align" value=""></button>
+                                <button class="ql-align" value="center"></button>
+                                <button class="ql-align" value="right"></button>
+                            </span>
+                            <span class="ql-formats">
+                                <button class="ql-list" value="bullet"></button>
+                                <button class="ql-list" value="ordered"></button>
+                            </span>
+                            <span class="ql-formats">
+                                <button class="ql-link"></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
 
                 <div class="form-group">
                     <button type="submit" class="btn btn-submit">Add Project</button>
@@ -16,3 +46,7 @@
         <div class="card-footer"></div>
     </div>
 </div>
+
+<script>
+    initWysiwygEditor('#add-project-description-editor', '#add-project-description-toolbar','#Description', '@Html.Raw(Model?.Description ?? "")')
+</script>
