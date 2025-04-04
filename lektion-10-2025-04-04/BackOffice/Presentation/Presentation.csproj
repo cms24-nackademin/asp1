@@ -19,4 +19,8 @@
     <ProjectReference Include="..\Hubs\Hubs.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\profiles\" />
+  </ItemGroup>
+
 </Project>

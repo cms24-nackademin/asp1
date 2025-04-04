@@ -36,13 +36,24 @@ public class NotificationService(INotificationRepository notificationRepository,
             switch (formData.NotificationTypeId)
             {
                 case 1:
-                    formData.Image = "/images/profiles/user-template.svg";
+                    formData.Image = "user-template-female-red.svg";
                     break;
 
                 case 2:
-                    formData.Image = "/images/projects/project-template.svg";
+                    formData.Image = "project-template.svg";
                     break;
             }
+        }
+
+        switch (formData.NotificationTypeId)
+        {
+            case 1:
+                formData.Image = $"/images/profiles/{formData.Image}";
+                break;
+
+            case 2:
+                formData.Image = $"/images/projects/{formData.Image}";
+                break;
         }
 
         var notificationEntity = formData.MapTo<NotificationEntity>();

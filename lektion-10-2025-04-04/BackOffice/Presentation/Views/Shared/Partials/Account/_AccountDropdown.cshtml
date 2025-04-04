@@ -2,14 +2,17 @@
 @{
     var userId = User.FindFirstValue(ClaimTypes.NameIdentifier) ?? "";
     var displayName = await userService.GetDisplayName(userId);
+
+    var userResult = await userService.GetUserByIdAsync(userId);
+    var user = userResult.Result;
 }
 
 <div class="account-dropdown-container">
-    <img id="account-dropdown-button" data-type="dropdown" data-target="#account-dropdown" src="~/images/profiles/user-template.svg" alt="User Avatar" class="account-avatar" />
+    <img id="account-dropdown-button" data-type="dropdown" data-target="#account-dropdown" src="~/images/profiles/@user?.Image" alt="@displayName" class="account-avatar" />
 
     <div id="account-dropdown" class="account-dropdown">
         <div class="account-info">
-            <img src="~/images/profiles/user-template.svg" alt="User Avatar" class="account-avatar-mini" />
+            <img src="~/images/profiles/@user?.Image" alt="@displayName" class="account-avatar-mini" />
             <span class="account-name">
                 @displayName
             </span>
