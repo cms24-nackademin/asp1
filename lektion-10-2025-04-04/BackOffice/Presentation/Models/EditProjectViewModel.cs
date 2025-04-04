@@ -3,11 +3,15 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Presentation.Models;
 
-public class AddProjectViewModel
+public class EditProjectViewModel
 {
+    [Required]
+    public string Id { get; set; } = null!;
+
     [DataType(DataType.Upload)]
     [Display(Name = "Project Image", Prompt = "Select project image")]
     public IFormFile? Image { get; set; }
+    public string? ImageUrl { get; set; }
 
     [Required]
     [DataType(DataType.Text)]
@@ -34,5 +38,10 @@ public class AddProjectViewModel
     [Display(Name = "Client", Prompt = "Select client")]
     public string ClientId { get; set; } = null!;
 
+    [Required]
+    [Display(Name = "Status", Prompt = "Select status")]
+    public string StatusId { get; set; } = null!;
+
     public IEnumerable<SelectListItem> Clients { get; set; } = [];
+    public IEnumerable<SelectListItem> Statuses { get; set; } = [];
 }

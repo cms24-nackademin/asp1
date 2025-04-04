@@ -1,13 +1,16 @@
-﻿@{
+﻿@model ProjectsViewModel
+@{
     ViewData["Title"] = "Projects";
 }
 
 <partial name="Partials/Project/_AddProjectModal" />
+<partial name="Partials/Project/_EditProjectModal" />
 
 <section id="projects">
     <div class="section-header">
         <h1>@ViewData["Title"]</h1>
         <button type="button" data-type="modal" data-target="#addProjectModal" class="btn btn-add"><span>Add Project</span></button>
+        <button type="button" data-type="modal" data-target="#editProjectModal" class="btn btn-edit"><span>Edit</span></button>
     </div>
 </section>
 
