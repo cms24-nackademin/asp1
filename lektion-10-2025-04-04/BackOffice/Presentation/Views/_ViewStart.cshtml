@@ -1,0 +1,12 @@
+﻿@{
+    var currentPath = Context.Request.Path.Value?.ToLowerInvariant() ?? string.Empty;
+
+    if (currentPath.StartsWith("/admin"))
+    {
+        Layout = "_BackOffice";
+    }
+    else
+    {
+        Layout = "_CenterScreen";
+    }
+}

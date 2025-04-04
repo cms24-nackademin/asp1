@@ -1,0 +1,18 @@
+﻿<div id="addProjectModal" class="modal">
+    <div class="card">
+        <div class="card-header">
+            <h3>Add Project</h3>
+            <button type="button" class="btn-close" data-type="close" data-close="true" data-target="#addProjectModal"></button>
+        </div>
+        <div class="card-body">
+            <form asp-controller="Project" asp-action="Add" method="post" enctype="multipart/form-data" novalidate>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-submit">Add Project</button>
+                </div>
+
+            </form>
+        </div>
+        <div class="card-footer"></div>
+    </div>
+</div>

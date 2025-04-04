@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Projects";
+}
+
+<partial name="Partials/Project/_AddProjectModal" />
+
+<section id="projects">
+    <div class="section-header">
+        <h1>@ViewData["Title"]</h1>
+        <button type="button" data-type="modal" data-target="#addProjectModal" class="btn btn-add"><span>Add Project</span></button>
+    </div>
+</section>
+
+

@@ -1,0 +1,36 @@
+﻿
+@{
+    var userId = User.FindFirstValue(ClaimTypes.NameIdentifier) ?? "";
+    var displayName = await userService.GetDisplayName(userId);
+}
+
+<div class="account-dropdown-container">
+    <img id="account-dropdown-button" data-type="dropdown" data-target="#account-dropdown" src="~/images/profiles/user-template.svg" alt="User Avatar" class="account-avatar" />
+
+    <div id="account-dropdown" class="account-dropdown">
+        <div class="account-info">
+            <img src="~/images/profiles/user-template.svg" alt="User Avatar" class="account-avatar-mini" />
+            <span class="account-name">
+                @displayName
+            </span>
+        </div>
+
+        <div class="account-action">
+            <div class="label">
+                <i class="fa-duotone fa-solid fa-cog"></i>
+                <span>Dark Mode</span>
+            </div>
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle" data-type="toggle" data-func="darkmode">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="dropdown-divider"></div>
+
+        <a class="account-signout" asp-controller="Auth" asp-action="Logout">
+            <i class="fa-duotone fa-solid fa-right-from-bracket"></i>
+            <span>Logout</span>
+        </a>
+    </div>
+</div>
