@@ -1,4 +1,5 @@
 ﻿using Business.Services;
+using Domain.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -17,10 +18,15 @@ public class ProjectsController(IStatusService statusService, IClientService cli
     [Route("admin/projects")]
     public async Task<IActionResult> Index()
     {
-        var projectResult = await _projectService.GetProjectsAsync();
+        var clients = await GetClientsSelectListAsync();
+        var statuses = await GetStatusesSelectListAsync();
+        var projects = await GetProjectsAsync();
+
         var vm = new ProjectsViewModel
         {
-            Projects = projectResult.Result!
+            Projects = projects,
+            AddProjectViewModel = new AddProjectViewModel() { Clients = clients },
+            EditProjectViewModel = new EditProjectViewModel() { Clients = clients, Statuses = statuses },
         };
 
         return View(vm);
@@ -100,6 +106,23 @@ public class ProjectsController(IStatusService statusService, IClientService cli
         });
 
         return statusList!;
+    }
+
+    private async Task<IEnumerable<Project>> GetProjectsAsync()
+    {
+        IEnumerable<Project> projects = [];
+        try
+        {
+            var projectResult = await _projectService.GetProjectsAsync();
+            if (projectResult.Succeeded && projectResult.Result != null)
+                projects = projectResult.Result;
+        }
+        catch (Exception ex) 
+        {
+            projects = [];
+        }
+
+        return projects;
     }
 
     #endregion

@@ -9,10 +9,19 @@
         <div class="card-body">
             <form asp-controller="Project" asp-action="Add" method="post" enctype="multipart/form-data" novalidate>
                 <div class="form-group">
+                    <label asp-for="Image"></label>
+                    <input asp-for="Image" />
+                </div>
+                
+                <div class="form-group">
                     <label asp-for="ProjectName"></label>
                     <input asp-for="ProjectName" />
                 </div>
 
+                <div class="form-group">
+                    <label asp-for="ClientId"></label>
+                    <select asp-for="ClientId" asp-items="Model.Clients"></select>
+                </div>
 
                 <div class="form-group">
                     <label asp-for="Description"></label>
@@ -39,6 +48,21 @@
                             </span>
                         </div>
                     </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="StartDate"></label>
+                    <input asp-for="StartDate" />
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="EndDate"></label>
+                    <input asp-for="EndDate" />
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Budget"></label>
+                    <input asp-for="Budget" />
                 </div>
 
 
