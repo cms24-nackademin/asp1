@@ -1,12 +1,14 @@
 ﻿using Business.Dtos;
 using Business.Models;
 using Business.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using WebApp.Models;
 
 namespace WebApp.Controllers;
 
+[Authorize]
 public class ProjectsController(IProjectService projectService, IClientService clientService, IStatusService statusService, IUserService userService) : Controller
 {
     private readonly IProjectService _projectService = projectService;
@@ -14,7 +16,6 @@ public class ProjectsController(IProjectService projectService, IClientService c
     private readonly IStatusService _statusService = statusService;
     private readonly IUserService _userService = userService;
 
-    [Route("admin/projects")]
     public async Task<IActionResult> Index()
     {
         var viewModel = new ProjectsViewModel()

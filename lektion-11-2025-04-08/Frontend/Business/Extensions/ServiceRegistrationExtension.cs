@@ -16,6 +16,7 @@ public static class ServiceRegistrationExtension
         services.AddScoped<ITokenHandler, TokenHandler>();
         services.AddScoped(typeof(ICacheHandler<>), typeof(CacheHandler<>));
 
+
         return services;
     }
 }

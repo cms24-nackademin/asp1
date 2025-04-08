@@ -1,12 +1,23 @@
-﻿@model ProjectViewModel
+﻿
+@model Project
 
 <div class="project card" data-project-id="@Model.Id">
     <div class="card-header">
         <div class="project-image">
-            <img src="@Model.ProjectImage" alt="template project">
+            @if (!string.IsNullOrEmpty(Model.ImageFileName))
+            {    
+                <img src="https://cms24asp1.blob.core.windows.net/uploads/@Model.ImageFileName" />
+
+                @* <img src="https://cms24asp1.blob.core.windows.net/uploads/@Model.ImageFileName" alt="template project" /> *@
+                @* <img src="/images/uploads/@Model.ImageFileName" alt="template project" /> *@
+            }
+            else
+            {
+                <img src="~/images/projects/project-template-purple.svg" alt="template project" />
+            }
         </div>
         <h6 class="project-name">@Model.ProjectName</h6>
-        <span class="client-name">@Model.ClientName</span>
+        <span class="client-name">@Model.Client.ClientName</span>
         <div id="project-actions-container">
             <button type="button" data-type="dropdown" data-target="#project-dropdown-@Model.Id" class="btn-action">
                 <i class="fa-solid fa-ellipsis"></i>

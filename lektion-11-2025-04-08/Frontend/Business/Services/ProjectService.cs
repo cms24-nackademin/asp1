@@ -15,16 +15,23 @@ public interface IProjectService
     Task<Project?> UpdateProjectAsync(UpdateProjectDto dto);
 }
 
-public class ProjectService(IProjectRepository projectRepository, ICacheHandler<IEnumerable<Project>> cacheHandler) : IProjectService
+public class ProjectService(IProjectRepository projectRepository, ICacheHandler<IEnumerable<Project>> cacheHandler, IImageHandler imageHandler) : IProjectService
 {
     private readonly IProjectRepository _projectRepository = projectRepository;
     private readonly ICacheHandler<IEnumerable<Project>> _cacheHandler = cacheHandler;
     private const string _cacheKey = "Projects";
+    private readonly IImageHandler _imageHandler = imageHandler;
 
     public async Task<Project?> CreateProjectAsync(AddProjectDto dto)
     {
         var entity = ProjectMapper.ToEntity(dto);
+        entity.StatusId = 1;
+
+        var imageFileName = await _imageHandler.SaveProjectImageAsync(dto.ImageFile!);
+        entity.ImageFileName = imageFileName;
+
         await _projectRepository.AddAsync(entity);
+
 
         var models = await UpdateCacheAsync();
         return models.FirstOrDefault(x => x.ProjectName == dto.ProjectName);
