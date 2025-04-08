@@ -1,0 +1,72 @@
+﻿@model ProjectsViewModel
+@{
+    ViewData["Title"] = "Projects";
+}
+
+<div id="projects" class="page">
+    <div class="page-header">
+        <h1>Projects</h1>
+        <button type="button" class="btn" data-type="modal" data-target="#add-project-modal">
+            <i class="fa-duotone fa-solid fa-plus"></i>
+            <span>Add Project</span>
+        </button>
+    </div>
+
+    <section class="project-list">
+        @if (Model.Projects != null && Model.Projects.Any())
+        {
+            @foreach (var project in Model.Projects)
+            {
+                @await Html.PartialAsync("ListItems/_ProjectListItemPartial", project)
+            }
+        }
+    </section>
+</div>
+
+@await Html.PartialAsync("Modals/_AddProjectModalPartial", Model.AddProjectFormData)
+@await Html.PartialAsync("Modals/_EditProjectModalPartial", Model.EditProjectFormData)
+
+
+<script src="~/js/validate.js"></script>
+<script>
+    document.querySelector("#add-project-modal form").addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const form = e.target;
+        const formData = new FormData(form);
+
+        const response = await fetch("/Projects/Create", {
+            method: "POST",
+            body: formData
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+            location.reload();
+        } else {
+            showValidationErrors(result.errors);
+        }
+    });
+
+    document.querySelector("#edit-project-modal form").addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const form = e.target;
+        const formData = new FormData(form);
+
+        const response = await fetch("/Projects/Update", {
+            method: "POST",
+            body: formData
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+            location.reload();
+        } else {
+            showValidationErrors(result.errors);
+        }
+    });
+
+</script>

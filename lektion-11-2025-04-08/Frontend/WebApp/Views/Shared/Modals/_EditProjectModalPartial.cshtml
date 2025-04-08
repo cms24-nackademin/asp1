@@ -1,0 +1,124 @@
+﻿@model EditProjectViewModel
+
+<section id="edit-project-modal" class="modal">
+    <div class="card">
+        <div class="card-header">
+            <h3>Edit Project</h3>
+            <button class="btn-close" data-type="close" data-target="#edit-project-modal"></button>
+        </div>
+        <div class="card-body">
+
+            <form asp-controller="Projects" asp-action="Update" method="post" enctype="multipart/form-data" novalidate>
+                <div class="form-group">
+                    <div class="image-preview-container project-image" data-file-upload>
+                        <img class="hide" />
+                        <div class="circle circle-gray">
+                            <i class="fa-duotone fa-solid fa-camera"></i>
+                        </div>
+                        <input type="file" accept="image/*" hidden />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Project Name</label>
+                    <input class="form-input" type="text" placeholder="Enter project name" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Client Name</label>
+                    <div class="form-select" data-placeholder="Choose a client">
+                        <button type="button" class="form-select-trigger">
+                            <span class="form-select-text"></span>
+                        </button>
+                        <ul class="form-select-options">
+                            @foreach (var option in Model.Clients)
+                            {
+                                <li class="form-select-option" data-value="@option.Value">@option.Text</li>
+                            }
+                        </ul>
+                        <input type="hidden" name="client-select-value" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Description</label>
+                    <div class="wysiwyg">
+                        <textarea id="edit-project-description" data-quill-textarea="#edit-project-description-wysiwyg-editor"></textarea>
+                        <div id="edit-project-description-wysiwyg-editor" data-quill-editor data-quill-toolbar="#edit-project-description-wysiwyg-toolbar" class="wysiwyg-editor"></div>
+                        <div id="edit-project-description-wysiwyg-toolbar" class="wysiwyg-toolbar">
+                            <span class="ql-formats">
+                                <button class="ql-bold"></button>
+                                <button class="ql-italic"></button>
+                                <button class="ql-underline"></button>
+                            </span>
+                            <span class="ql-formats">
+                                <button class="ql-align" value=""></button>
+                                <button class="ql-align" value="center"></button>
+                                <button class="ql-align" value="right"></button>
+                            </span>
+                            <span class="ql-formats">
+                                <button class="ql-list" value="bullet"></button>
+                                <button class="ql-list" value="ordered"></button>
+                            </span>
+                            <span class="ql-formats">
+                                <button class="ql-link"></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-horizontal-group">
+                    <div class="form-group">
+                        <label class="form-label">Start Date</label>
+                        <input class="form-input" type="date" />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">End Date</label>
+                        <input class="form-input" type="date" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Member</label>
+                    <div class="form-select" data-placeholder="Choose a member">
+                        <button type="button" class="form-select-trigger">
+                            <span class="form-select-text"></span>
+                        </button>
+                        <ul class="form-select-options">
+                            @foreach (var option in Model.Members)
+                            {
+                                <li class="form-select-option" data-value="@option.Value">@option.Text</li>
+                            }
+                        </ul>
+                        <input type="hidden" name="member-select-value" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Budget</label>
+                    <div class="form-input-extended">
+                        <i class="fa-duotone fa-solid fa-dollar-sign"></i>
+                        <input class="form-input" type="text" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Project Status</label>
+                    <div class="form-select" data-placeholder="Choose a status">
+                        <button type="button" class="form-select-trigger">
+                            <span class="form-select-text"></span>
+                        </button>
+                        <ul class="form-select-options">
+                            @foreach (var option in Model.Statuses)
+                            {
+                                <li class="form-select-option" data-value="@option.Value">@option.Text</li>
+                            }
+                        </ul>
+                        <input type="hidden" name="client-select-value" value="1" />
+                    </div>
+                </div>
+
+                <button type="submit" class="btn">Save</button>
+            </form>
+
+        </div>
+    </div>
+</section>

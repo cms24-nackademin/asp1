@@ -1,0 +1,10 @@
+﻿<header id="header">
+    <form class="search-form" method="get" asp-controller="" asp-action="" novalidate>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" class="form-search-input" placeholder="Search anything..." />
+    </form>
+
+    @await Html.PartialAsync("Dropdowns/_NotificationDropdownPartial")
+    @await Html.PartialAsync("Dropdowns/_AccountDropdownPartial")
+
+</header>

@@ -1,0 +1,48 @@
+﻿@model LoginViewModel
+
+@{
+    Layout = "_CenterWrapperLayout";
+    ViewData["Title"] = "Login";
+}
+
+<section id="login">
+    <div class="card">
+        <div class="card-header">
+            <h1>Login</h1>
+        </div>
+        <div class="card-body">
+            <form method="post" asp-controller="ExternalAuth" asp-action="Index" novalidate>
+                <button type="submit" class="btn-external">
+                    <img src="/images/icons/google-icon.svg" />
+                    <span>Log in with Google</span>
+                </button>
+            </form>
+
+            <div class="divider"><span>or</span></div>
+
+            <form method="post" asp-controller="Auth" asp-action="Login" novalidate>
+                <div class="form-group">
+                    <label class="form-label" asp-for="Email"></label>
+                    <input class="form-input" asp-for="Email" />
+                    <span asp-validation-for="Email"></span>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" asp-for="Password"></label>
+                    <input class="form-input" asp-for="Password" />
+                    <span asp-validation-for="Password"></span>
+                </div>
+                <div class="form-checkbox-group">
+                    <label class="form-checkbox">
+                        <input asp-for="RememberMe" class="form-checkbox-input" />
+                        <span class="form-checkbox-box"></span>
+                    </label>
+                    <label asp-for="RememberMe" class="form-label">Remember me</label>
+                </div>
+
+                <button type="submit" class="btn">Log In</button>
+
+            </form>
+        </div>
+        <div class="card-footer">Don't have an account? <a asp-controller="Auth" asp-action="SignUp">Sign up</a></div>
+    </div>
+</section>
