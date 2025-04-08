@@ -15,7 +15,7 @@ public interface IProjectService
     Task<Project?> UpdateProjectAsync(UpdateProjectDto dto);
 }
 
-public class ProjectService(IProjectRepository projectRepository, ICacheHandler<IEnumerable<Project>> cacheHandler, IImageHandler imageHandler) : IProjectService
+public class ProjectService(IProjectRepository projectRepository, ICacheHandler<IEnumerable<Project>> cacheHandler) : IProjectService
 {
     private readonly IProjectRepository _projectRepository = projectRepository;
     private readonly ICacheHandler<IEnumerable<Project>> _cacheHandler = cacheHandler;
